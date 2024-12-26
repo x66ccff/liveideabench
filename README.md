@@ -1,5 +1,13 @@
 # 🤖💡 LiveIdeaBench: Evaluating LLMs' Scientific Creativity and Idea Generation with Minimal Context
 
+### Dataset
+
+[![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-yellow)](https://huggingface.co/datasets/6cf/liveideabench)
+
+### Paper
+
+[![arXiv](https://img.shields.io/badge/arXiv-2412.17596-b31b1b.svg)](https://arxiv.org/abs/2412.17596)
+
 
 ## LiveIdeaBench Evaluation Framework
 ![LiveIdeaBench Evaluation Framework](./assets/image.png)
