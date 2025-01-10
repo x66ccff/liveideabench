@@ -15,7 +15,7 @@
 ![LiveIdeaBench Evaluation Framework](./assets/image.png)
 
 
-## 🏆LiveIdeaBench💡 (2024-11)
+## 🏆LiveIdeaBench💡 (2024-12)
 
 
 |   Rank | Model                                  |   Fluency |   Feasibility |   Originality |   Flexibility |   Average | Is_Open_Source   |
