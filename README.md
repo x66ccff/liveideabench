@@ -1,6 +1,6 @@
 # 🤖💡 [LiveIdeaBench](http://liveideabench.com): Evaluating LLMs' Scientific Creativity and Idea Generation with Minimal Context
 
-
+Leaderboard: http://liveideabench.com
 
 ### Dataset
 
