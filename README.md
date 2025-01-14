@@ -1,5 +1,9 @@
 # 🤖💡 [LiveIdeaBench](http://liveideabench.com): Evaluating LLMs' Scientific Creativity and Idea Generation with Minimal Context
 
+
+_"It's not like finding a needle in a haystack, it is like creating new needles."_
+
+
 Leaderboard: http://liveideabench.com
 
 ### Dataset
