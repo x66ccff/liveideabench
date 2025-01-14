@@ -52,7 +52,7 @@ Leaderboard: http://liveideabench.com
 ```bibtex
 @article{ruan2024liveideabench,
 title={LiveIdeaBench: Evaluating LLMs' Scientific Creativity and Idea Generation with Minimal Context},
-author={Ruan, Kai and Wang, Xuan and Hong, Jixiang and Sun, Hao},
+author={Kai Ruan and Xuan Wang and Jixiang Hong and Peng Wang and Yang Liu and Hao Sun},
 journal={arXiv preprint arXiv:2412.17596},
 year={2024}
 }
