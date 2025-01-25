@@ -17,6 +17,7 @@ Leaderboard: http://liveideabench.com
 
 ## LiveIdeaBench Evaluation Framework
 ![LiveIdeaBench Evaluation Framework](./assets/image.png)
+![Leaderboard](./assets/bench.png)
 
 
 ## 🏆LiveIdeaBench💡 (2024-12)
