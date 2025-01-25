@@ -36,7 +36,7 @@ Leaderboard: http://liveideabench.com
 |      9 | nvidia/llama-3.1-nemotron-70b-instruct |      8.21 |          6.34 |          7.54 |          6.89 |      7.24 | ✅             |
 |     10 | qwen/qwen-2.5-coder-32b-instruct       |      8.43 |          6.65 |          6.9  |          6.78 |      7.19 | ✅             |
 |     11 | meta-llama/llama-3.1-405b-instruct     |      8.28 |          6.31 |          7.04 |          6.67 |      7.07 | ✅             |
-|     12 | sammcj/qwen2.5-dracarys2-72b:Q4_K_M    |      7.98 |          6.91 |          6.64 |          6.56 |      7.02 | ✅             |
+|     12 | abacusai/qwen2.5-dracarys2-72b   |      7.98 |          6.91 |          6.64 |          6.56 |      7.02 | ✅             |
 |     13 | openai/o1-mini                         |      7.55 |          6.88 |          7.15 |          6.44 |      7    | 🔒            |
 |     14 | qwen/qwen-2.5-72b-instruct             |      7.9  |          6.75 |          6.74 |          6.56 |      6.99 | ✅             |
 |     15 | step-2-16k                             |      7.97 |          6.67 |          6.28 |          6.33 |      6.81 | 🔒            |
