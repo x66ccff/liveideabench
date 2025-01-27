@@ -15,9 +15,20 @@ Leaderboard: http://liveideabench.com
 [![arXiv](https://img.shields.io/badge/arXiv-2412.17596-b31b1b.svg)](https://arxiv.org/abs/2412.17596)
 
 
+### 🧠✨🎉 News (2025/1/27): Latest Dataset Update on Hugging Face! 
+
+We are excited to announce that the latest dataset, including supplementary tests for models like **deepseek-R1**, **deepseek-V3**, **minimax-01**, **phi-4**, and **Opus**, has been uploaded to Hugging Face! 🚀
+
+Check it out here: [https://huggingface.co/datasets/6cf/liveideabench-DLC-250127](https://huggingface.co/datasets/6cf/liveideabench-DLC-250127)
+
+---
+
 ## LiveIdeaBench Evaluation Framework
 ![LiveIdeaBench Evaluation Framework](./assets/image.png)
 ![Leaderboard](./assets/bench.png)
+
+
+
 
 
 ## 🏆LiveIdeaBench💡 (2024-12)
