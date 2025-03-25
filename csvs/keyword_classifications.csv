@@ -1,0 +1,1181 @@
+keyword,category,similarity_score
+meteorology,Earth science,0.8500495
+periodic table,Chemistry,0.7390155
+weather forecasting,Earth science,0.82856834
+earthquakes,Pharmacy,0.8205048
+stars,Astronomy,0.8012298
+hurricanes,Earth science,0.7177295
+phycology,Anthropology,0.79762787
+galaxies,Astronomy,0.80300725
+global positioning system,Earth science,0.75184053
+viruses,Biology,0.83107644
+schizophrenia,Pharmacy,0.8593203
+tornadoes,Anthropology,0.71924514
+big bang theory,Physics,0.83587337
+parasites,Biology,0.7290165
+solar system,Pharmacy,0.7806775
+mass spectrometry,Chemistry,0.7546588
+psychiatry,Psychology,0.8331189
+tsunamis,Earth science,0.7135604
+evolution,Biology,0.8537189
+planets,Astronomy,0.7568278
+mechanics,Biology,0.8906046
+fossils,Biology,0.8417442
+proton,Pharmacy,0.8200789
+ct scans,Pharmacy,0.8038187
+deep brain stimulation,Physics,0.7231773
+parkinsons disease,Pharmacy,0.73958147
+comets,Biology,0.72180206
+forestry,Finance,0.87849236
+gastroenterology,Earth science,0.7263706
+pulsars,Astronomy,0.7485221
+multiple sclerosis,Biology,0.71744186
+urology,Finance,0.8354969
+neurology,Medicine,0.82272017
+vitamins,Pharmacy,0.8355026
+habitat,Finance,0.8235942
+big bang,Pharmacy,0.68824214
+optometry,Physics,0.8082726
+electronics,Physics,0.8131321
+black holes,Physics,0.72918606
+endocrinology,Biology,0.8710081
+mri,Pharmacy,0.8131138
+lasers,Physics,0.8466104
+linear programming,Systems engineering,0.77802366
+physics,Physics,0.9999999
+magnetic resonance imaging,Pharmacy,0.7274128
+supernova,Astronomy,0.73834056
+supernovae,Physics,0.6762844
+memory,Finance,0.779917
+computed tomography,Pharmacy,0.7578653
+fusion,Finance,0.806527
+mitosis,Biology,0.86962116
+geographic information systems,Earth science,0.8260305
+dark matter,Physics,0.77491325
+nebulae,Physics,0.7376844
+radiology,Medicine,0.88374877
+antibiotics,Pharmacy,0.83914554
+antivirals,Pharmacy,0.77323395
+satellites,Astronomy,0.79734594
+oncology,Biology,0.87751853
+el nino,Finance,0.7107764
+elisa,Chemistry,0.74391204
+botany,Biology,0.7481748
+pathology,Biology,0.9062221
+gis,Finance,0.8609207
+law,Sociology,0.8267259
+chemistry,Chemistry,0.9999994
+statics,Accounting,0.79186714
+statistics,Statistics,1.0
+magnetism,Physics,0.84139717
+measurement,Accounting,0.849201
+fungi,Biology,0.81529856
+microscopy,Finance,0.792032
+coronal mass ejections,Physics,0.69043946
+algebra,Astronomy,0.85835236
+geometry,Finance,0.8802858
+alzheimers disease,Political science,0.6904259
+anatomy,Biology,0.86690336
+nephrology,Pharmacy,0.731865
+global warming,Earth science,0.7303301
+asteroids,Astronomy,0.8268358
+rheumatology,Pharmacy,0.8387252
+biology,Biology,0.9999999
+cardiology,Pharmacy,0.89138174
+pet scans,Pharmacy,0.7306872
+pcr,Chemistry,0.8001392
+cern,Physics,0.77940917
+photosynthesis,Biology,0.8667591
+mathematics,Astronomy,0.8732858
+theory,Physics,0.8531367
+psychophysics,Physics,0.8167725
+genes,Biology,0.8200989
+momentum,Accounting,0.8428834
+transistors,Pharmacy,0.78848827
+algorithm,Accounting,0.763253
+ultrasound,Finance,0.8494194
+algorithms,Physics,0.79206973
+alloys,Physics,0.7977068
+universe,Finance,0.8627464
+altruism,Finance,0.7900909
+vaccination,Pharmacy,0.85067844
+vaccines,Pharmacy,0.89581776
+water cycle,Biology,0.80788374
+dentistry,Pharmacy,0.89411604
+homeostasis,Biology,0.8744475
+sampling,Pedagogy,0.74940324
+observation,Accounting,0.81057835
+dynamics,Biology,0.8891812
+ohms law,Mathematics and Logic,0.76403993
+science museums,Sociology,0.8132186
+ecosystems,Pharmacy,0.7970896
+sociology,Sociology,0.99999964
+software engineering,Systems engineering,0.9373661
+catalysis,Biology,0.86781675
+chlorophyll,Pharmacy,0.833084
+physiology,Biology,0.8988919
+civil engineering,Systems engineering,0.8450998
+plastics,Physics,0.80891824
+pollution,Finance,0.7696708
+mechanical engineering,Systems engineering,0.8277349
+surveying,Accounting,0.8299253
+pressure,Pharmacy,0.80647755
+symbiosis,Biology,0.853725
+meiosis,Biology,0.87022614
+telescope,Astronomy,0.8298047
+computer science,Systems science,0.6775181
+pulmonology,Pharmacy,0.74366355
+trigonometry,Accounting,0.7771204
+air pollution,Earth science,0.79958737
+quarks,Physics,0.8478413
+reflection,Accounting,0.8649352
+neurons,Biology,0.8129701
+greenhouse gases,Earth science,0.74523854
+replication,Accounting,0.8425447
+halflife,Chemistry,0.67511827
+astronomy,Astronomy,0.99999976
+hematology,Pharmacy,0.87254536
+hormones,Biology,0.84400874
+hypothesis,Pedagogy,0.6997349
+ecosystem,Pharmacy,0.8396914
+electron,Finance,0.80248225
+calculus,Finance,0.8730242
+entropy,Finance,0.81286716
+ceramics,Physics,0.8033612
+enzymes,Biology,0.8258499
+equilibrium,Finance,0.88151336
+chromosomes,Biology,0.82357615
+logic,Finance,0.85400665
+mammals,Astronomy,0.83480227
+extinction,Biology,0.84010184
+surgery,Pharmacy,0.8429558
+metabolism,Biology,0.88474005
+frequency,Astronomy,0.80693626
+metastasis,Biology,0.74717885
+terraforming,Accounting,0.76417756
+minerals,Pharmacy,0.82004774
+aeronautical engineering,Systems engineering,0.809883
+aerospace engineering,Systems engineering,0.8700164
+quasars,Astronomy,0.69905305
+anesthesiology,Medicine,0.7762483
+glycolysis,Biology,0.8726507
+archaeology,Anthropology,0.9246454
+water pollution,Earth science,0.8256363
+holography,Pedagogy,0.80317837
+horticulture,Agricultural science,0.79352796
+hydraulics,Systems engineering,0.8303076
+semiconductors,Pharmacy,0.81549406
+pediatrics,Medicine,0.7907417
+solar flares,Earth science,0.7136364
+perception,Biology,0.8619669
+kinesiology,Pedagogy,0.8138809
+krebs cycle,Biology,0.7980143
+la nina,Political science,0.67643785
+rna,Biology,0.80724776
+erosion,Pharmacy,0.83059037
+circadian rhythms,Biology,0.79470617
+experiment,Finance,0.71128404
+experimentation,Finance,0.8079041
+food chain,Pharmacy,0.7740822
+prions,Biology,0.8296533
+probability,Economics,0.8318771
+acoustics,Pedagogy,0.81774884
+transcription,Biology,0.82636774
+mutation,Biology,0.8360942
+geology,Earth science,0.8367873
+radiation,Physics,0.8317982
+amplitude,Astronomy,0.8229954
+geriatrics,Pedagogy,0.7709389
+good manufacturing practices,Systems engineering,0.7594239
+antioxidants,Pharmacy,0.82044905
+anxiety disorders,Psychology,0.7200345
+demography,Anthropology,0.8165687
+wavelength,Astronomy,0.77517277
+biochemistry,Biology,0.8884245
+operating systems,Accounting,0.75519246
+ideal gas law,Physics,0.7658081
+elasticity,Finance,0.868238
+electrical engineering,Systems engineering,0.7725822
+information technology,Systems science,0.8144092
+interference,Finance,0.8364865
+isotopes,Physics,0.82173395
+sonar,Pharmacy,0.7205164
+event horizon,Finance,0.7963954
+stem cells,Medicine,0.5370126
+cloning,Biology,0.7685624
+cognitive behavioral therapy,Psychology,0.70718884
+fermentation,Biology,0.81637555
+polymers,Physics,0.8027785
+taxonomy,Astronomy,0.8441677
+programming,Accounting,0.8635215
+fractals,Physics,0.8017982
+microbial fuel cells,Systems engineering,0.7339208
+microbiology,Biology,0.8457773
+topography,Finance,0.87544125
+genetics,Biology,0.9006642
+multiverse,Systems engineering,0.7561124
+turbulence,Accounting,0.8550495
+apoptosis,Biology,0.80143017
+greenhouse effect,Pharmacy,0.823085
+nitrogen cycle,Biology,0.76389766
+wind turbines,Systems engineering,0.7951671
+zoology,Anthropology,0.81879425
+batteries,Physics,0.80204624
+hydroponics,Physics,0.8244583
+immunotherapy,Biology,0.83014196
+bioluminescence,Biology,0.8059983
+biome,Pharmacy,0.75935733
+biomedical engineering,Systems engineering,0.7839772
+paleontology,Anthropology,0.79327196
+social networks,Sociology,0.77766144
+solar energy,Physics,0.80770874
+entomology,Anthropology,0.8056469
+kinetics,Biology,0.8263783
+landslides,Earth science,0.7101032
+space weather,Earth science,0.8326484
+epigenetics,Biology,0.83984387
+photons,Physics,0.84811455
+evaporation,Accounting,0.85762316
+forensic science,Systems science,0.8442858
+fossil fuels,Finance,0.78079134
+thermodynamics,Finance,0.851164
+time travel,Finance,0.7666733
+topology,Finance,0.83048064
+acid rain,Pharmacy,0.7944686
+actuators,Physics,0.8063071
+criminology,Anthropology,0.84731066
+crispr,Finance,0.7895354
+alleles,Chemistry,0.748167
+radioactivity,Pharmacy,0.8193492
+antimatter,Biology,0.76391876
+graphene,Finance,0.7619049
+neutron,Pharmacy,0.818043
+nootropics,Pharmacy,0.8017146
+wormholes,Accounting,0.746951
+disaster management,Accounting,0.83478475
+atomic force microscopy,Systems engineering,0.7049218
+autophagy,Biology,0.81978804
+schrodingers cat,Physics,0.6511389
+scientific method,Physics,0.79210615
+sedimentary rocks,Earth science,0.6768269
+optics,Physics,0.8705124
+igneous rocks,Earth science,0.685089
+immune system,Biology,0.74927133
+organic chemistry,Chemistry,0.8357365
+electromagnetism,Systems engineering,0.8313978
+electron configuration,Chemistry,0.7279619
+electronegativity,Biology,0.77283686
+integrated pest management,Agricultural science,0.7988665
+international space station,Earth science,0.75509834
+carbon cycle,Biology,0.81868553
+cell cycle,Biology,0.7649279
+cell respiration,Biology,0.77888113
+cellular respiration,Biology,0.7780652
+pharmacology,Biology,0.91162485
+chemical engineering,Systems engineering,0.873362
+chromatography,Chemistry,0.7726405
+linguistics,Finance,0.8731079
+placebo effect,Pharmacy,0.73403543
+combustion,Finance,0.81803906
+food web,Biology,0.7918339
+prion diseases,Biology,0.7649636
+food webs,Earth science,0.72754973
+composites,Pharmacy,0.79712826
+computational fluid dynamics,Systems engineering,0.81086195
+prosthetics,Pharmacy,0.7582713
+transpiration,Biology,0.7972177
+natural selection,Biology,0.78423667
+data structures,Data engineering,0.79281795
+antibodies,Statistics,0.71987045
+redox reactions,Chemistry,0.7818531
+refraction,Accounting,0.8588564
+neuroscience,Biology,0.9064021
+neurotransmitters,Pharmacy,0.759098
+astrophysics,Astronomy,0.8985406
+heisenberg uncertainty principle,Physics,0.70090127
+dna replication,Biology,0.77237934
+human evolution,Biology,0.7412992
+hybridization,Accounting,0.8043793
+industrial engineering,Systems engineering,0.8831029
+singularity,Finance,0.8440645
+kirchhoffs laws,Physics,0.7147007
+solubility,Accounting,0.83465487
+permafrost,Astronomy,0.6969503
+linear algebra,Systems engineering,0.7973967
+stoichiometry,Biology,0.8595029
+string theory,Physics,0.77061945
+structural engineering,Systems engineering,0.871987
+supercomputing,Physics,0.7451389
+support vector machines,Data engineering,0.7265711
+fishery science,Agricultural science,0.84387547
+commensalism,Finance,0.82007927
+systematics,Pedagogy,0.8061077
+metamorphic rocks,Astronomy,0.7162944
+fuel cells,Systems engineering,0.76943475
+microbiome,Biology,0.8016604
+aging,Biology,0.8124843
+cryogenics,Physics,0.8143061
+quantum mechanics,Physics,0.8795966
+gerontology,Anthropology,0.74825406
+decision trees,Data engineering,0.7815501
+reinforcement learning,Systems engineering,0.7127156
+neuroplasticity,Biology,0.7411124
+neuropsychology,Anthropology,0.76439923
+neutrino,Physics,0.82637185
+neutrinos,Physics,0.86115223
+weather satellites,Earth science,0.8385047
+differential equations,Mathematics and Logic,0.805172
+nuclear fusion,Biology,0.7605298
+nuclear magnetic resonance,Physics,0.7487218
+discrete mathematics,Mathematics and Logic,0.84873176
+histology,Finance,0.8168267
+rock cycle,Biology,0.77936256
+ballistics,Physics,0.7893346
+immunology,Biology,0.8866005
+infectious diseases,Earth science,0.6710955
+ornithology,Anthropology,0.83684707
+ozone layer,Physics,0.804516
+electron microscopy,Finance,0.76544267
+social determinants of health,Political science,0.7586457
+crisprcas9,Biology,0.77635276
+enthalpy,Astronomy,0.8258797
+cartography,Systems engineering,0.7960781
+laplace transform,Data science,0.7591711
+environmental science,Earth science,0.8477143
+sports medicine,Medicine,0.75236416
+marine biology,Biology,0.84474915
+fiber optics,Systems engineering,0.7703215
+surfactants,Pharmacy,0.80707943
+colloids,Physics,0.7192166
+fourier transform,Finance,0.8095074
+protein synthesis,Biology,0.71352464
+microprocessors,Systems engineering,0.78916115
+gausss law,Physics,0.7918316
+genetic engineering,Systems engineering,0.8110361
+monoclonal antibodies,Pharmacy,0.7438333
+quantum entanglement,Physics,0.7945576
+agronomy,Agricultural science,0.88452685
+cytology,Biology,0.87063223
+anthropocene,Anthropology,0.77609533
+valence electrons,Physics,0.7650356
+neutron stars,Physics,0.8143409
+dietary supplements,Medicine,0.7192774
+newtons laws,Physics,0.81435525
+diffraction,Physics,0.80360675
+reynolds number,Physics,0.75166184
+heat exchangers,Systems engineering,0.81238425
+nuclear energy,Physics,0.8856854
+higgs boson,Physics,0.7936775
+hybrid vehicles,Systems engineering,0.78355426
+operations management,Data engineering,0.7979932
+senescence,Biology,0.8519128
+electron transport chain,Data engineering,0.6830892
+electrophoresis,Biology,0.812505
+embedded systems,Systems engineering,0.86827195
+soil erosion,Earth science,0.78085
+calvin cycle,Biology,0.7353072
+laminar flow,Physics,0.78583497
+space stations,Earth science,0.76984924
+pharmacokinetics,Statistics,0.7601304
+chaos theory,Physics,0.8174935
+chemical bonding,Biology,0.8072336
+chemical bonds,Biology,0.80916625
+chemical reactions,Chemistry,0.8187156
+exoskeletons,Systems engineering,0.7167251
+fermi paradox,Physics,0.8010745
+maxwells equations,Physics,0.81285274
+flow cytometry,Statistics,0.641062
+mechatronics,Systems engineering,0.8099574
+telomeres,Biology,0.8268447
+meteoroids,Physics,0.83367765
+publication,Accounting,0.6987947
+constructivism,Pedagogy,0.7898091
+gel electrophoresis,Systems engineering,0.6696937
+aerodynamics,Systems engineering,0.8202855
+genetic drift,Biology,0.7243987
+mutualism,Finance,0.8214637
+crystallization,Chemistry,0.8016474
+mycology,Agricultural science,0.7891561
+angiogenesis,Biology,0.82198966
+random forests,Finance,0.7686174
+redshift,Astronomy,0.83999825
+aquaculture,Astronomy,0.8644275
+water treatment,Pedagogy,0.7196137
+nuclear fission,Biology,0.8357984
+nuclear medicine,Medicine,0.823063
+ocean currents,Earth science,0.7832832
+educational psychology,Psychology,0.87777436
+oxidative stress,Biology,0.70223045
+ozone depletion,Biology,0.79011863
+particle accelerator,Physics,0.84412134
+empiricism,Pedagogy,0.81989557
+doubleslit experiment,Accounting,0.6989163
+invasive species,Economics,0.67603886
+pauli exclusion principle,Pedagogy,0.7102307
+solar cells,Systems engineering,0.7272116
+james webb space telescope,Physics,0.72581273
+kinematics,Biology,0.8420037
+kmeans clustering,Data engineering,0.6801763
+environmental engineering,Systems engineering,0.89361835
+kuiper belt,Biology,0.71452194
+spectroscopy,Chemistry,0.86761856
+phylogenetic trees,Mathematics and Logic,0.71526057
+phylogenetics,Biology,0.7703042
+exoplanets,Biology,0.71689725
+plate tectonics,Earth science,0.8016984
+mars rover,Physics,0.7268964
+superposition,Accounting,0.8693017
+synapses,Pharmacy,0.8572693
+principal component analysis,Statistics,0.73136914
+metaanalysis,Statistics,0.6963041
+tectonics,Earth science,0.8136533
+metallurgy,Systems engineering,0.7736701
+abiogenesis,Biology,0.8208784
+toxicology,Biology,0.8826525
+molecular biology,Biology,0.894209
+quantum chromodynamics,Physics,0.7877351
+transhumanism,Anthropology,0.85888624
+aeronautics,Physics,0.73899996
+trophic levels,Chemistry,0.69024724
+turing machines,Mathematics and Logic,0.79585767
+unfolded protein response,Biology,0.723629
+virology,Biology,0.89853644
+desertification,Sociology,0.7936581
+nuclear reactions,Physics,0.75794256
+dosimetry,Physics,0.777557
+oceanography,Earth science,0.84281236
+one health,Accounting,0.74721086
+oort cloud,Accounting,0.7956948
+hydrology,Earth science,0.83454454
+bioengineering,Systems engineering,0.82795614
+serology,Biology,0.81693125
+biomechanics,Systems engineering,0.8028304
+seti,Pharmacy,0.78928316
+panspermia,Pharmacy,0.75007874
+embryology,Pedagogy,0.84748936
+ionization energy,Physics,0.80408245
+carbon capture,Accounting,0.7860042
+petroleum engineering,Systems engineering,0.84798574
+space telescopes,Earth science,0.7872857
+photovoltaics,Physics,0.82246953
+light pollution,Biology,0.81525266
+superconductivity,Physics,0.8182007
+cognitive psychology,Psychology,0.84916174
+fission,Accounting,0.85438037
+free radicals,Physics,0.74212515
+fullerenes,Chemistry,0.7587833
+tidal energy,Astronomy,0.801863
+time dilation,Accounting,0.79577816
+construction management,Accounting,0.82864684
+tokamak,Physics,0.78652906
+continental drift,Biology,0.76958466
+cosmic rays,Physics,0.82723546
+cybernetics,Systems engineering,0.7055199
+nash equilibrium,Economics,0.7892066
+radiocarbon dating,Accounting,0.7465483
+raman spectroscopy,Physics,0.81889147
+randomized controlled trials,Political science,0.65552884
+antibiotic resistance,Biology,0.6659769
+antimicrobial resistance,Biology,0.6338177
+relativity,Physics,0.83050936
+heat transfer,Physics,0.77167445
+herpetology,Anthropology,0.72723705
+distillation,Chemistry,0.7165992
+zoonotic diseases,Earth science,0.6604867
+dna fingerprinting,Systems engineering,0.7172978
+beta decay,Physics,0.83022404
+oncogenes,Physics,0.7504455
+operations research,Data science,0.69255257
+infrared spectroscopy,Physics,0.8268955
+inorganic chemistry,Chemistry,0.84766424
+bioremediation,Systems engineering,0.6974505
+emergence,Finance,0.86322784
+social psychology,Psychology,0.85826635
+cancer research,Agricultural science,0.60884047
+carbon dating,Accounting,0.7919154
+jet engines,Physics,0.82521826
+keplers laws,Physics,0.7658616
+kalman filters,Systems engineering,0.76630634
+environmental health,Earth science,0.771843
+pharmacodynamics,Chemistry,0.76404786
+large hadron collider,Physics,0.60325587
+speciation,Biology,0.8740233
+exercise physiology,Systems engineering,0.7159477
+supercapacitors,Systems engineering,0.53300595
+supervised learning,Data engineering,0.7777772
+surgical robotics,Systems science,0.7936828
+medical imaging,Systems engineering,0.80993414
+confocal microscopy,Finance,0.69539005
+fuzzy logic,Systems engineering,0.8304109
+mineral resources,Earth science,0.80038476
+coral bleaching,Biology,0.8114992
+genetic algorithms,Systems engineering,0.8150457
+genetic counseling,Medicine,0.77958876
+agroforestry,Agricultural science,0.78763306
+geoengineering,Earth science,0.8479167
+radiation therapy,Physics,0.78643525
+geotechnical engineering,Systems engineering,0.8503759
+analytical chemistry,Chemistry,0.8452662
+rationalism,Political science,0.77998614
+neuromodulation,Biology,0.75003606
+developmental psychology,Psychology,0.86763096
+xray crystallography,Data engineering,0.6004808
+xray diffraction,Systems engineering,0.69806904
+distributed systems,Systems science,0.8234112
+rocket science,Data science,0.82833385
+dna sequencing,Statistics,0.6706079
+ocean acidification,Earth science,0.8466524
+earth science,Earth science,1.0000007
+binomial nomenclature,Accounting,0.76354325
+ecological succession,Biology,0.68954575
+sea level rise,Earth science,0.7104585
+optical fibers,Physics,0.7624521
+biogeochemical cycles,Earth science,0.78517437
+biogeochemistry,Earth science,0.834869
+biomass energy,Physics,0.79335594
+electrochemistry,Chemistry,0.84915805
+biomimicry,Systems engineering,0.75235295
+instrumentation,Statistics,0.7961293
+bosons,Physics,0.8555767
+evidencebased practice,Pedagogy,0.776501
+ionosphere,Physics,0.8154909
+keystone species,Pharmacy,0.62425464
+carbon sequestration,Earth science,0.7659545
+carrying capacity,Finance,0.768376
+cell biology,Biology,0.8349545
+vectorborne diseases,Earth science,0.67612773
+spectral analysis,Accounting,0.7536855
+plant hormones,Agricultural science,0.7654376
+polymerase chain reaction,Medicine,0.6661681
+colligative properties,Accounting,0.7650333
+power electronics,Systems engineering,0.78780663
+fluid mechanics,Physics,0.82681096
+food science,Agricultural science,0.85741854
+systematic reviews,Systems science,0.5784184
+telomerase,Finance,0.79226124
+theoretical physics,Physics,0.8458878
+gemology,Biology,0.8413449
+gene expression,Biology,0.7167926
+quantum dots,Physics,0.7574835
+muon,Physics,0.76700807
+nanomaterials,Chemistry,0.80562377
+geomorphology,Anthropology,0.8106322
+nanoparticles,Chemistry,0.8112261
+unsupervised learning,Data engineering,0.79162794
+dark energy,Physics,0.8322503
+neurodegenerative diseases,Biology,0.7464802
+graph theory,Data engineering,0.81398964
+decoherence,Physics,0.6973132
+green chemistry,Chemistry,0.6582793
+digital forensics,Systems engineering,0.8042974
+hierarchical clustering,Data engineering,0.7556365
+number theory,Mathematics and Logic,0.8394499
+dna methylation,Biology,0.782771
+hubble space telescope,Physics,0.7125698
+human genetics,Medicine,0.7827402
+ecological footprint,Pharmacy,0.72078514
+biodiversity hotspots,Earth science,0.6747198
+bioethics,Anthropology,0.80269617
+seismology,Earth science,0.842464
+biomarkers,Biology,0.77842385
+set theory,Mathematics and Logic,0.8274849
+biophysics,Biology,0.86111796
+bioreactors,Systems engineering,0.7458118
+biosensors,Chemistry,0.8012908
+brain imaging,Finance,0.7459267
+brain mapping,Accounting,0.7622391
+endoflife care,Medicine,0.74053675
+carbon nanotubes,Biology,0.75216573
+nextgeneration sequencing,Data science,0.7042347
+petrochemicals,Systems engineering,0.8137411
+petrochemistry,Biology,0.7913967
+cell signaling,Biology,0.7444263
+spacetime,Astronomy,0.840441
+uvvis spectroscopy,Chemistry,0.7067019
+chemical kinetics,Physics,0.8183361
+leptons,Physics,0.716607
+sports science,Medicine,0.72841287
+life cycle analysis,Systems engineering,0.77917576
+standard model,Accounting,0.8020179
+ethology,Pedagogy,0.837873
+physical chemistry,Chemistry,0.8199085
+plasmonics,Physics,0.83073455
+failure modes and effects analysis,Systems engineering,0.75526404
+material science,Data science,0.8461708
+cognitive science,Systems science,0.83511704
+process engineering,Systems engineering,0.93745196
+metabolic disorders,Pharmacy,0.7668174
+micrornas,Biology,0.8219049
+control systems,Systems engineering,0.79974467
+mining engineering,Systems engineering,0.9012315
+genome editing,Data engineering,0.7440021
+agricultural science,Agricultural science,1.0
+allosteric regulation,Biology,0.77831256
+radioactive decay,Physics,0.8187075
+antibiotic stewardship,Pedagogy,0.7573132
+regenerative medicine,Biology,0.75145
+wave energy,Physics,0.73209655
+nuclear engineering,Systems engineering,0.907865
+hubbles law,Political science,0.75525117
+hydroelectric power,Systems engineering,0.7765658
+ichthyology,Anthropology,0.807044
+biomaterials,Biology,0.83840585
+parasitology,Biology,0.819948
+environmental management,Accounting,0.8024254
+laser technology,Physics,0.81993514
+photonics,Physics,0.8381135
+evolutionary psychology,Psychology,0.88238025
+subduction zones,Earth science,0.63009226
+plasticity,Biology,0.8831542
+medical physics,Physics,0.6318394
+medicinal chemistry,Chemistry,0.8186139
+mendelian genetics,Medicine,0.7756368
+composite materials,Systems engineering,0.67678237
+psychopharmacology,Anthropology,0.74038184
+gamma radiation,Physics,0.7793342
+general relativity,Physics,0.8476146
+adverse drug reactions,Pharmacy,0.5902859
+transcription factors,Biology,0.6525253
+cosmic microwave background,Physics,0.69119406
+genetically modified organisms,Systems engineering,0.73357695
+cosmology,Physics,0.8852004
+morphogenesis,Biology,0.8670897
+cryosphere,Earth science,0.7463716
+geodesy,Systems engineering,0.8042499
+cultural anthropology,Anthropology,0.8997122
+cytogenetics,Biology,0.79630864
+gluons,Physics,0.7201917
+neurobiology,Biology,0.8048314
+database systems,Data engineering,0.7470212
+gravitational waves,Physics,0.7954212
+warp drives,Accounting,0.79264075
+dendrochronology,Anthropology,0.746501
+hawking radiation,Physics,0.7469247
+astrobiology,Physics,0.87545186
+digital signal processing,Systems engineering,0.72875017
+xray imaging,Physics,0.7372711
+nuclear physics,Physics,0.8665305
+behavioral science,Political science,0.7499197
+binary stars,Astronomy,0.67760247
+hydrothermal vents,Biology,0.7340256
+biogeography,Earth science,0.77428156
+biomimetics,Systems engineering,0.7449459
+interdisciplinary studies,Systems science,0.7845965
+bioterrorism,Sociology,0.8272841
+interferometry,Systems engineering,0.78387076
+soil conservation,Agricultural science,0.7954956
+cell differentiation,Medicine,0.6077012
+environmental justice,Political science,0.82332224
+waveparticle duality,Physics,0.7941881
+spintronics,Physics,0.79821014
+phytoremediation,Earth science,0.74431324
+stochastic processes,Data science,0.7843463
+stratigraphy,Pedagogy,0.71779454
+climatology,Earth science,0.7795446
+expert systems,Systems engineering,0.861901
+clinical pharmacology,Medicine,0.7668103
+fermions,Physics,0.8440655
+fieldwork,Pedagogy,0.74110013
+precision medicine,Medicine,0.8288196
+systems biology,Systems science,0.91353744
+metabolomics,Biology,0.79159164
+geomatics,Earth science,0.8425353
+radioisotopes,Chemistry,0.70123076
+radiometric dating,Accounting,0.76359165
+neuromorphic computing,Systems engineering,0.8112361
+rna interference,Biology,0.756536
+holism,Sociology,0.76908493
+drake equation,Physics,0.762118
+semantic web,Data science,0.81267405
+outreach programs,Pedagogy,0.72137403
+biosecurity,Pharmacy,0.76512736
+sociolinguistics,Anthropology,0.78837067
+evidencebased medicine,Medicine,0.8118577
+soil fertility,Agricultural science,0.80137014
+space debris,Accounting,0.76475966
+environmental law,Political science,0.7735134
+space science,Earth science,0.8666406
+pharmacogenomics,Systems engineering,0.7695261
+ethnobotany,Anthropology,0.7272454
+statistical process control,Data science,0.8388115
+evolutionary biology,Biology,0.8618859
+lunar missions,Physics,0.756029
+plant physiology,Agricultural science,0.7751132
+manufacturing processes,Systems engineering,0.80905116
+extremophiles,Pharmacy,0.7565656
+falsifiability,Accounting,0.7862889
+precision agriculture,Finance,0.8535997
+medical ethics,Pedagogy,0.7463708
+computational biology,Biology,0.83205986
+metabolic pathways,Biology,0.73057735
+metagenomics,Data engineering,0.75337225
+metamaterials,Physics,0.7772859
+text mining,Data engineering,0.7901163
+fusion energy,Physics,0.84503806
+thermochemistry,Chemistry,0.80847466
+microfluidics,Biology,0.80615395
+control theory,Systems engineering,0.8145456
+quantum field theory,Physics,0.80312735
+agroecology,Agricultural science,0.8031798
+crystallography,Chemistry,0.70822906
+ultrasound imaging,Pedagogy,0.7554844
+anthropic principle,Pedagogy,0.8415406
+gravitational lensing,Physics,0.73008955
+virtual laboratories,Systems engineering,0.7446227
+habitat destruction,Anthropology,0.6997114
+newtonian mechanics,Physics,0.8369872
+health policy,Political science,0.80236846
+distributed computing,Systems engineering,0.8291472
+numerical analysis,Systems engineering,0.73952085
+numerical methods,Systems engineering,0.67601514
+ecodesign,Systems engineering,0.8763643
+hydrodynamics,Physics,0.8341398
+sea ice,Earth science,0.752848
+optogenetics,Biology,0.8307943
+industrial hygiene,Pharmacy,0.815235
+origin of life,Biology,0.7265878
+information theory,Systems engineering,0.836503
+shors algorithm,Physics,0.72687167
+signal processing,Systems engineering,0.6921827
+signal transduction,Biology,0.6718974
+biostatistics,Statistics,0.7744765
+particle physics,Physics,0.8419871
+space tourism,Sociology,0.8256969
+special relativity,Physics,0.8444574
+philosophy of science,Political science,0.79735917
+limnology,Anthropology,0.7899729
+classical mechanics,Physics,0.8670106
+superbugs,Physics,0.76236695
+coevolution,Biology,0.7960552
+supersymmetry,Finance,0.86836684
+cognitive neuroscience,Systems science,0.79893595
+complex analysis,Systems engineering,0.80278283
+fourier analysis,Accounting,0.77920604
+protein folding,Biology,0.79304737
+psychoneuroimmunology,Anthropology,0.77403146
+microelectronics,Systems engineering,0.8313709
+thin films,Physics,0.71196663
+conservation biology,Biology,0.800115
+tissue engineering,Systems engineering,0.76066256
+mineralogy,Pedagogy,0.8009188
+quantum cryptography,Physics,0.864067
+transcriptomics,Biology,0.8061668
+quantum gravity,Physics,0.8289701
+nanomedicine,Anthropology,0.6670153
+veterinary medicine,Medicine,0.84070444
+veterinary science,Agricultural science,0.8854407
+grid computing,Systems engineering,0.82578385
+developmental biology,Biology,0.85241777
+wireless communication,Finance,0.7957209
+xrays,Physics,0.7893429
+dna profiling,Biology,0.7333763
+scientific communication,Physics,0.7717091
+hydrogeology,Anthropology,0.78906476
+second messengers,Biology,0.7942165
+information retrieval,Data science,0.77095157
+electroencephalography,Pharmacy,0.77383876
+smart materials,Systems engineering,0.7113411
+parallel computing,Systems engineering,0.8511373
+social network analysis,Data engineering,0.79392684
+soil science,Agricultural science,0.88228333
+environmental chemistry,Earth science,0.6532147
+environmental economics,Economics,0.850831
+laboratory safety,Chemistry,0.7887015
+cellular automata,Biology,0.8424964
+petrology,Physics,0.8072114
+light reactions,Physics,0.775081
+statistical mechanics,Physics,0.86691815
+linguistic anthropology,Anthropology,0.90660655
+statistical thermodynamics,Physics,0.86233974
+long noncoding rnas,Biology,0.6424428
+experimental psychology,Psychology,0.8276867
+magnetosphere,Physics,0.8548919
+extraterrestrial life,Biology,0.74340487
+superfluidity,Physics,0.7752025
+clustering algorithms,Data engineering,0.76226807
+polymer chemistry,Chemistry,0.8490711
+primatology,Sociology,0.85857564
+synaptic transmission,Biology,0.78987384
+memristors,Physics,0.71428007
+gaia hypothesis,Accounting,0.7713889
+quantum chemistry,Physics,0.8660702
+aerobiology,Biology,0.81054693
+cosmic inflation,Physics,0.8444098
+molecular genetics,Biology,0.8262375
+quantum decoherence,Physics,0.6304517
+molecular modeling,Systems engineering,0.78486437
+mtheory,Accounting,0.72395265
+altmetrics,Accounting,0.780436
+geophysics,Earth science,0.84724617
+reaction mechanisms,Chemistry,0.77651095
+decision theory,Systems engineering,0.81629705
+habitat fragmentation,Anthropology,0.65503275
+disaster risk reduction,Systems engineering,0.8025292
+nutrigenomics,Systems engineering,0.7570182
+safety engineering,Systems engineering,0.938284
+nutrition science,Agricultural science,0.8443412
+human ecology,Anthropology,0.80570513
+drug discovery,Data engineering,0.7772041
+ecological modeling,Systems science,0.77957785
+open science,Data science,0.7631364
+optoelectronics,Physics,0.8259644
+inflation theory,Physics,0.8173288
+emergent properties,Physics,0.7703934
+patent law,Political science,0.7557107
+energy economics,Economics,0.8696662
+solar thermal energy,Physics,0.7572823
+nutritional science,Agricultural science,0.84947526
+space missions,Earth science,0.80099773
+enzyme kinetics,Systems engineering,0.7329478
+photochemistry,Chemistry,0.76938784
+chemical physics,Physics,0.9071941
+logical positivism,Mathematics and Logic,0.76506436
+cladistics,Data science,0.70566237
+feedback inhibition,Biology,0.79457134
+population ecology,Anthropology,0.7070757
+population genetics,Systems science,0.77855545
+medical anthropology,Anthropology,0.9206871
+community ecology,Sociology,0.68676996
+comparative anatomy,Anthropology,0.8158836
+process control,Systems engineering,0.81778455
+fossil record,Pharmacy,0.7715056
+computational neuroscience,Biology,0.8357581
+condensed matter physics,Physics,0.8637644
+3d bioprinting,Systems engineering,0.65135205
+crop science,Agricultural science,0.9249062
+quantum teleportation,Physics,0.6812302
+radiation protection,Physics,0.7816691
+natural capital,Economics,0.83467925
+radiochemistry,Chemistry,0.757764
+grant writing,Finance,0.71189004
+habitable zone,Pharmacy,0.7424534
+asteroid mining,Data engineering,0.7722335
+reproductive biology,Biology,0.79501176
+history of science,Political science,0.76532435
+human factors engineering,Systems engineering,0.84167296
+biocomputing,Biology,0.6749003
+sequence alignment,Statistics,0.6081165
+bioplastics,Biology,0.75719017
+paleomagnetism,Biology,0.6881645
+solid state physics,Physics,0.86244905
+labonachip,Physics,0.7733915
+stellarators,Physics,0.8096076
+chemical biology,Biology,0.8778101
+length contraction,Accounting,0.75959384
+structural biology,Biology,0.8899195
+population dynamics,Biology,0.7848337
+communication satellites,Astronomy,0.7979816
+synaptic plasticity,Biology,0.7746717
+compression algorithms,Data engineering,0.77728593
+computational chemistry,Chemistry,0.86704046
+fractal geometry,Data science,0.7905835
+functional foods,Systems engineering,0.661929
+proteostasis,Biology,0.8216272
+functional mri,Physics,0.7130724
+quantum biology,Biology,0.85187185
+quantum sensors,Physics,0.75847507
+geomagnetism,Physics,0.7666807
+glaciology,Earth science,0.73785275
+neural engineering,Systems engineering,0.84630144
+grand unified theory,Physics,0.77053374
+decision science,Political science,0.7937419
+neuroimaging,Finance,0.84737813
+grovers algorithm,Mathematics and Logic,0.7141901
+wildlife management,Agricultural science,0.7728299
+atomic physics,Physics,0.91212
+behavioral genetics,Psychology,0.7273928
+drug delivery systems,Systems engineering,0.7341849
+bibliometrics,Pedagogy,0.7794342
+science education,Economics,0.84379685
+hydraulic fracturing,Systems engineering,0.77209044
+ecological economics,Economics,0.8068425
+ice cores,Earth science,0.6872309
+optical computing,Physics,0.8099516
+paleoclimatology,Earth science,0.7314626
+integer programming,Systems engineering,0.7859943
+energy policy,Economics,0.7863466
+energy security,Finance,0.8254001
+peace studies,Political science,0.8175045
+kin selection,Biology,0.726422
+space colonization,Accounting,0.7670581
+space law,Political science,0.80024123
+philosophy of mind,Sociology,0.7438265
+physical anthropology,Anthropology,0.89204013
+population biology,Biology,0.82361436
+swarm intelligence,Systems engineering,0.7290958
+complex systems,Systems science,0.88769746
+computational physics,Physics,0.8169657
+methane hydrates,Data science,0.6786889
+copenhagen interpretation,Finance,0.76844627
+quantum electrodynamics,Physics,0.8071093
+genomic medicine,Medicine,0.8442179
+quantum key distribution,Physics,0.718347
+quantum supremacy,Physics,0.6825555
+nanobiotechnology,Anthropology,0.77620786
+cultural evolution,Anthropology,0.7604729
+data compression,Data engineering,0.84893745
+animal behavior,Psychology,0.7338524
+network theory,Systems science,0.75535566
+vibration analysis,Systems engineering,0.7819463
+neuropharmacology,Anthropology,0.76704043
+reliability engineering,Systems engineering,0.9360534
+nonlinear dynamics,Systems engineering,0.83508193
+astrometry,Astronomy,0.77278167
+astronautics,Earth science,0.7078798
+dna computing,Biology,0.8190789
+rocket propulsion,Physics,0.77237207
+dna damage,Biology,0.7011142
+safety protocols,Statistics,0.7893873
+scientometrics,Earth science,0.7240094
+bioelectronics,Systems engineering,0.811059
+ecosystem ecology,Systems science,0.78479767
+ecotoxicology,Earth science,0.7962494
+orbital mechanics,Physics,0.7946661
+sociobiology,Biology,0.87018645
+interstellar travel,Physics,0.58020306
+cancer biology,Biology,0.79041064
+environmental microbiology,Earth science,0.7476983
+phase transitions,Physics,0.7184012
+learning analytics,Data science,0.76560926
+chemical safety,Chemistry,0.80326
+chronobiology,Anthropology,0.7433646
+evolutionary algorithms,Systems engineering,0.80078554
+piping systems,Systems engineering,0.8273046
+loop quantum gravity,Physics,0.76521885
+exobiology,Biology,0.8000189
+climate adaptation,Earth science,0.77844316
+planetary science,Earth science,0.9189294
+structural geology,Earth science,0.7847774
+cognitive computing,Systems science,0.8268782
+mass transfer,Systems engineering,0.75339216
+swarm robotics,Systems engineering,0.82247424
+propulsion systems,Systems engineering,0.78195745
+microbial ecology,Biology,0.7249763
+quantum algorithms,Physics,0.8276895
+quantum hall effect,Physics,0.74333596
+quantum optics,Physics,0.8558818
+radiation physics,Physics,0.82556427
+geospatial analysis,Data engineering,0.83073217
+radio astronomy,Astronomy,0.7919382
+urban ecology,Anthropology,0.79739094
+artificial organs,Biology,0.70100987
+hazard analysis,Statistics,0.77181077
+atmospheric science,Earth science,0.89663136
+rna world hypothesis,Biology,0.81739336
+observational astronomy,Astronomy,0.90090084
+scientific literacy,Finance,0.84713084
+sleep science,Data science,0.8045344
+evodevo,Biology,0.7657386
+ensemble methods,Systems engineering,0.79848695
+selforganization,Biology,0.80385816
+landscape ecology,Systems science,0.7916799
+photonic crystals,Physics,0.7648252
+manyworlds interpretation,Physics,0.7964258
+marine conservation,Anthropology,0.7904767
+mars exploration,Physics,0.76746583
+collective intelligence,Data science,0.7853102
+fisheries science,Agricultural science,0.8837452
+fluidization,Accounting,0.7841103
+medical genetics,Medicine,0.8401029
+synthetic chemistry,Chemistry,0.8897521
+computational complexity,Finance,0.7736639
+computational modeling,Systems engineering,0.8467629
+computational social science,Systems science,0.90411216
+protein engineering,Data engineering,0.790645
+topological insulators,Physics,0.75100064
+quantum annealing,Physics,0.8256113
+neuroeconomics,Political science,0.79724073
+astrochemistry,Earth science,0.822573
+dietary guidelines,Medicine,0.7027192
+reservoir engineering,Systems engineering,0.8940712
+numerical weather prediction,Earth science,0.78186905
+behavioral ecology,Psychology,0.7224031
+earth observation,Earth science,0.8822087
+hydrogen economy,Biology,0.8247729
+scientific misconduct,Political science,0.5889022
+scientific publishing,Political science,0.6514347
+biodegradation,Systems engineering,0.7331562
+sedimentology,Finance,0.7833077
+paleobiology,Anthropology,0.78536105
+biophotonics,Systems engineering,0.7512512
+enhanced oil recovery,Systems engineering,0.73552144
+peer review process,Pedagogy,0.6925462
+selfassembly,Biology,0.74048114
+phase equilibria,Physics,0.78798145
+chemical synthesis,Chemistry,0.8543681
+statistical physics,Physics,0.8846195
+lipidomics,Systems engineering,0.777665
+lyapunov exponents,Biology,0.76026493
+polymer science,Systems science,0.82665706
+supramolecular chemistry,Chemistry,0.7308557
+combinatorial chemistry,Chemistry,0.85199755
+process safety,Finance,0.8119553
+process simulation,Systems engineering,0.8155459
+fracture mechanics,Systems engineering,0.7650541
+theoretical chemistry,Chemistry,0.88584054
+thermal analysis,Systems engineering,0.76109344
+microlensing,Biology,0.7824191
+galaxy formation,Astronomy,0.71312875
+public health policy,Political science,0.7513881
+minimally invasive surgery,Systems science,0.69693726
+quantum information,Physics,0.80390745
+network science,Data science,0.8819719
+neuroprosthetics,Pharmacy,0.74719775
+astrodynamics,Physics,0.85893553
+risk communication,Systems engineering,0.81639826
+high energy physics,Physics,0.73895586
+earth system science,Earth science,0.9431326
+paleoecology,Anthropology,0.7745253
+environmental dna,Physics,0.77845603
+petroleum geology,Earth science,0.82397205
+stable isotopes,Physics,0.75987464
+cheminformatics,Data science,0.8140492
+comparative psychology,Psychology,0.85128355
+metabolic engineering,Data engineering,0.7678205
+public engagement,Political science,0.7477577
+transportation science,Systems science,0.8941606
+geochronology,Earth science,0.8184735
+vaccination programs,Pharmacy,0.7513801
+artificial life,Systems science,0.7755478
+research funding,Statistics,0.5057017
+satellite technology,Systems engineering,0.8182266
+science journalism,Political science,0.87400794
+econophysics,Economics,0.8322705
+interdisciplinary research,Systems science,0.81164604
+metalloproteins,Biology,0.77485275
+celestial mechanics,Mathematics and Logic,0.7278907
+chemical evolution,Biology,0.8246175
+ethics in science,Political science,0.81641716
+physical oceanography,Earth science,0.8410535
+evolutionary computation,Systems engineering,0.8065789
+plasma physics,Physics,0.8966522
+fingerprint analysis,Accounting,0.76469886
+colloid chemistry,Chemistry,0.8337251
+complexity science,Systems science,0.8842937
+thermoelectric materials,Physics,0.7211447
+molecular evolution,Biology,0.76235276
+nanofabrication,Systems engineering,0.7220601
+dairy science,Agricultural science,0.88512325
+data fabrication,Statistics,0.77375925
+vaccine development,Biology,0.78253263
+vaccinology,Biology,0.84814334
+neuroinformatics,Systems engineering,0.79671776
+open access publishing,Data science,0.49581358
+ore deposits,Finance,0.72772026
+internet governance,Finance,0.7897098
+solar physics,Physics,0.8926773
+percolation theory,Physics,0.86876154
+lunar exploration,Physics,0.76983607
+connectomics,Biology,0.782588
+conservation ecology,Anthropology,0.76244086
+convergence science,Data science,0.8770026
+crop monitoring,Accounting,0.77833843
+radiobiology,Physics,0.8382871
+neuroethics,Anthropology,0.79622746
+water resources engineering,Earth science,0.82299924
+renewable energy integration,Systems engineering,0.78034604
+diabetes research,Agricultural science,0.619321
+astrogeology,Earth science,0.77258444
+ecophysiology,Biology,0.80287397
+sediment transport,Earth science,0.76888645
+ecosystem management,Earth science,0.7786846
+biological oceanography,Earth science,0.81779444
+biomedical imaging,Finance,0.76800525
+pandemic preparedness,Accounting,0.74591327
+space habitats,Biology,0.7745282
+phylogeography,Anthropology,0.73793185
+flight mechanics,Systems engineering,0.7741666
+public understanding of science,Political science,0.815156
+geoarchaeology,Anthropology,0.77416635
+glycomics,Data engineering,0.79688764
+reactor design,Systems engineering,0.7517633
+archaeometry,Anthropology,0.8743852
+artificial consciousness,Biology,0.7754295
+science diplomacy,Astronomy,0.7402508
+science policy,Political science,0.88242316
+biomechatronics,Systems engineering,0.7485218
+signal filtering,Systems engineering,0.7572921
+highperformance computing,Systems engineering,0.7984215
+stability analysis,Systems engineering,0.7495861
+planetary atmospheres,Earth science,0.8175211
+marine chemistry,Chemistry,0.81825024
+cloud physics,Physics,0.85724676
+surface science,Data science,0.83444804
+freshwater biology,Biology,0.82882106
+restoration ecology,Anthropology,0.7814382
+helioseismology,Anthropology,0.7598968
+diversity in science,Political science,0.79887515
+isotope analysis,Accounting,0.77105546
+exposure assessment,Systems engineering,0.70526505
+neuromorphic engineering,Systems engineering,0.850941
+planetary geology,Earth science,0.85072815
+galactic astronomy,Astronomy,0.8430847
+developmental genetics,Biology,0.8244161
+interstellar medium,Physics,0.6403469
+pattern formation,Biology,0.7766421
+citizen engagement,Accounting,0.7833422
+colloid science,Physics,0.8163342
+consciousness studies,Systems engineering,0.7626466
+mineral identification,Accounting,0.7828078
+geomicrobiology,Earth science,0.8079902
+analog signal processing,Systems engineering,0.7363381
+data falsification,Finance,0.6731837
+obesity research,Anthropology,0.68282056
+snow science,Earth science,0.89658177
+highthroughput screening,Data engineering,0.6798655
+xray astronomy,Physics,0.7691546
+epidemic modeling,Systems engineering,0.80521226
+physical biology,Physics,0.8904642
+citation analysis,Accounting,0.7809295
+evolutionary developmental biology,Biology,0.8665825
+critical phenomena,Physics,0.8587042
+tumor biology,Biology,0.7677169
+dream research,Physics,0.7646278
+infrared astronomy,Astronomy,0.8436967
+astrostatistics,Physics,0.80784553
+prebiotic chemistry,Biology,0.8091301
+gravitational wave astronomy,Physics,0.81319547
+geochemistry,Earth science,0.8017436
+tumor suppressors,Biology,0.75192463
+reproducibility,Finance,0.8010891
+bacteriology,Anthropology,0.8149023
+isotope geochemistry,Earth science,0.77005404
+asteroid deflection,Physics,0.7120563
+neutrino astronomy,Physics,0.8690989
+space medicine,Medicine,0.82697856
+sociophysics,Physics,0.8530897
+aerosol science,Earth science,0.878426
+astroinformatics,Data science,0.813825
+augmented cognition,Systems science,0.82672554
+observational cosmology,Physics,0.82834494
+bells theorem,Mathematics and Logic,0.745135
+science advocacy,Political science,0.86071914
+computeraided design,Systems engineering,0.79875195
+exoplanet detection,Accounting,0.6823133
+ultraviolet astronomy,Physics,0.8558992
+separation processes,Systems engineering,0.75666124
+enzymology,Biology,0.84572375
+cognitive robotics,Systems science,0.83298814
+fluid dynamics,Systems engineering,0.81790125
+braincomputer interface,Systems engineering,0.7921536
+planetary probes,Physics,0.82983345
+bernoullis principle,Physics,0.7540608
+ice core analysis,Data engineering,0.7262715
+bioinformatics algorithms,Physics,0.77837443
+exogeology,Anthropology,0.7969569
+solar photovoltaics,Systems engineering,0.8005196
+lunar science,Earth science,0.8136916
+climate models,Earth science,0.8440795
+mathematical modeling,Systems engineering,0.857331
+conservation genetics,Anthropology,0.75623953
+molecular computing,Physics,0.8156164
+volcanology,Earth science,0.8345591
+mass extinctions,Earth science,0.69744265
+surface chemistry,Chemistry,0.8328753
+atmospheric chemistry,Earth science,0.8295485
+rna transcription,Biology,0.7133498
+seafloor spreading,Earth science,0.6882415
+quantum tunneling,Physics,0.8091989
+industrialorganizational psychology,Psychology,0.7972323
+patient confidentiality,Statistics,0.72494113
+chemical thermodynamics,Physics,0.86439383
