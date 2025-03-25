@@ -31,22 +31,9 @@ Check it out here: [https://huggingface.co/datasets/6cf/liveideabench-DLC-250127
 
 ### Database Initialization
 
-The database will be automatically initialized the first time the program is run. If you modify the database structure (e.g., field changes), you need to reinitialize the database by following these steps:
-
-1. Ensure that the `data` folder exists in the project root directory (if it doesn't exist, it will be created automatically).
-2. Delete the old database file (if it exists):
-   ```bash
-   rm -f ./data/ideabench.db
-   ```
-3. Run the Python script to initialize the database:
-   ```bash
-   python -c "from utils.database import init_database; init_database()"
-   ```
-
-### Database Export
-
+Run the Python script to initialize the database:
 ```bash
-python view_database.py
+python -c "from utils.database import init_database; init_database()"
 ```
 
 ### Configuring API Keys
@@ -87,6 +74,19 @@ python run.py --idea_model "openai/gpt-4o-mini" --keyword "relativity" "periodic
 # Do not specify a keyword (use all keywords):
 
 python run.py --idea_model "openai/gpt-4o-mini"
+```
+
+### Database Export
+
+```bash
+python view_database.py      
+```
+Then, run `stats.ipynb`, to generate `data/data.parquet`
+
+### Evaluate Fluency
+
+```bash
+python hash.py
 ```
 
 ### Supported Model Providers
