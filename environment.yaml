@@ -391,6 +391,7 @@ dependencies:
       - ir-datasets==0.5.10
       - jiter==0.8.2
       - jupyterlab-widgets==3.0.13
+      - levenshtein==0.27.1
       - lxml==5.3.1
       - lz4==4.4.3
       - multidict==6.2.0
@@ -418,6 +419,8 @@ dependencies:
       - pyasn1-modules==0.4.1
       - pydantic==2.10.4
       - pydantic-core==2.27.2
+      - python-levenshtein==0.27.1
+      - rapidfuzz==3.12.2
       - rsa==4.9
       - safetensors==0.5.3
       - scikit-learn==1.6.0
@@ -426,6 +429,7 @@ dependencies:
       - sentencepiece==0.2.0
       - socksio==1.0.0
       - sympy==1.13.1
+      - tiktoken==0.9.0
       - tokenizers==0.21.1
       - torch==2.6.0
       - torchvision==0.21.0
