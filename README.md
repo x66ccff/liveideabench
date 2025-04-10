@@ -29,14 +29,14 @@ Check it out here: [https://huggingface.co/datasets/6cf/liveideabench-DLC-250127
 
 ## Evaluation Instruction
 
-### Database Initialization
+### 1️⃣ Database Initialization
 
 Run the Python script to initialize the database:
 ```bash
 python -c "from utils.database import init_database; init_database()"
 ```
 
-### Configuring API Keys
+### 2️⃣ Configuring API Keys
 
 Before running the program, you need to configure at least one API key:
 
@@ -52,7 +52,7 @@ Before running the program, you need to configure at least one API key:
    export GEMINI_API_KEYS="key1,key2,key3"
    ```
 
-### Running Examples
+### 3️⃣ Running Examples
 
 Generate and evaluate ideas using a specified model:
 
@@ -76,18 +76,22 @@ python run.py --idea_model "openai/gpt-4o-mini" --keyword "relativity" "periodic
 python run.py --idea_model "openai/gpt-4o-mini"
 ```
 
-### Database Export
+### 4️⃣ Database Export
 
 ```bash
 python view_database.py      
 ```
 Then, run `stats.ipynb`, to generate `data/data.parquet`
 
-### Evaluate Fluency
+### 5️⃣ Evaluate Fluency
 
 ```bash
 python hash.py
 ```
+
+### 6️⃣ Compute Flexibility & Plotting
+
+run `stat_flexibility.ipynb`
 
 ### Supported Model Providers
 
