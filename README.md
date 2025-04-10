@@ -101,6 +101,11 @@ python hash.py
 
 run `stats_flexibility.ipynb`
 
+
+## 🌍🌱 CO2 Emission Estimation
+
+run `co2.ipynb`
+
 ### Supported Model Providers
 
 - openrouter (default)
