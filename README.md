@@ -15,6 +15,18 @@ _"It's not like finding a needle in a haystack, it is like creating new needles.
 [![arXiv](https://img.shields.io/badge/arXiv-2412.17596-b31b1b.svg)](https://arxiv.org/abs/2412.17596)
 
 
+### 🧠✨🎉 News (2025/3/29): Latest Dataset Update (v2) on Hugging Face! 
+
+We are pleased to announce that, based on the invaluable feedback from reviewers, we have enhanced our benchmark by upgrading it to **version 2**. This update introduces a new dimension—**Clarity**—and improves the prompts, evaluation process (including the rejection handling mechanism), making our benchmark more comprehensive and objective.
+
+This v2 version of the benchmark incorporates the latest models, including: `claude-3.7-sonnet:thinking`, `o3-mini-high` `gpt-4.5-preview`, `qwq-32b`, `deepseek-r1`, `gemini-2.0-flash-thinking`, and a total of **41** state-of-the-art models.
+
+For previous v1 version, check it out here:
+
+[https://huggingface.co/datasets/6cf/liveideabench](https://huggingface.co/datasets/6cf/liveideabench)
+
+[https://huggingface.co/datasets/6cf/liveideabench-DLC-250127](https://huggingface.co/datasets/6cf/liveideabench-DLC-250127)
+
 ### 🧠✨🎉 News (2025/1/27): Latest Dataset Update on Hugging Face! 
 
 We are excited to announce that the latest dataset, including supplementary tests for models like **deepseek-R1**, **deepseek-V3**, **minimax-01**, **phi-4**, and **Opus**, has been uploaded to Hugging Face! 🚀
