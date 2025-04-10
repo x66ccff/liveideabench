@@ -7,8 +7,8 @@
 
 ### File Structure
 
-- `run.py`: Main program
+- `../run.py`: Main program
 - `../config.py`: Configuration management
-- `utils/LLM.py`: LLM interaction and processing
-- `utils/database.py`: Database management
-- `utils/prompts.json`: Prompt templates
+- `./LLM.py`: LLM interaction and processing
+- `./database.py`: Database management
+- `./prompts.json`: Prompt templates
