@@ -10,6 +10,8 @@ _"It's not like finding a needle in a haystack, it is like creating new needles.
 
 [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DatasetV1-yellow)](https://huggingface.co/datasets/6cf/liveideabench)
 
+[![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DatasetV1_DLC_250127-yellow)](https://huggingface.co/datasets/6cf/liveideabench-DLC-250127)
+
 [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DatasetV2-yellow)](https://huggingface.co/datasets/6cf/liveideabench-v2)
 
 ### 📃 Paper
@@ -37,14 +39,16 @@ Check it out here: [https://huggingface.co/datasets/6cf/liveideabench-DLC-250127
 
 ## 👇 Evaluation Instruction
 
-### 1️⃣ Database Initialization
+### 1️⃣ Installing Environment
+
+### 2️⃣ Database Initialization
 
 Run the Python script to initialize the database:
 ```bash
 python -c "from utils.database import init_database; init_database()"
 ```
 
-### 2️⃣ Configuring API Keys
+### 3️⃣ Configuring API Keys
 
 Before running the program, you need to configure at least one API key:
 
@@ -60,7 +64,7 @@ Before running the program, you need to configure at least one API key:
    export GEMINI_API_KEYS="key1,key2,key3"
    ```
 
-### 3️⃣ Running Examples
+### 4️⃣ Running Examples
 
 Generate and evaluate ideas using a specified model:
 
@@ -84,20 +88,20 @@ python run.py --idea_model "openai/gpt-4o-mini" --keyword "relativity" "periodic
 python run.py --idea_model "openai/gpt-4o-mini"
 ```
 
-### 4️⃣ Database Export
+### 5️⃣ Database Export
 
 ```bash
 python view_database.py      
 ```
 Then, run `stats.ipynb`, to generate `data/data.parquet`
 
-### 5️⃣ Evaluate Fluency
+### 6️⃣ Evaluate Fluency
 
 ```bash
 python hash.py
 ```
 
-### 6️⃣ Compute Flexibility & Plotting
+### 7️⃣ Compute Flexibility & Plotting
 
 run `stats_flexibility.ipynb`
 
