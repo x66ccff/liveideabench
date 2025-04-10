@@ -6,13 +6,13 @@ _"It's not like finding a needle in a haystack, it is like creating new needles.
 
 🏆 Leaderboard: http://liveideabench.com 💡
 
-### Dataset
+### 🤗 Dataset
 
 [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DatasetV1-yellow)](https://huggingface.co/datasets/6cf/liveideabench)
 
 [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DatasetV2-yellow)](https://huggingface.co/datasets/6cf/liveideabench-v2)
 
-### Paper
+### 📃 Paper
 
 [![arXiv](https://img.shields.io/badge/arXiv-2412.17596-b31b1b.svg)](https://arxiv.org/abs/2412.17596)
 
@@ -35,7 +35,7 @@ Check it out here: [https://huggingface.co/datasets/6cf/liveideabench-DLC-250127
 ![LiveIdeaBench Evaluation Framework](./assets/image.png)
 ![Leaderboard](./assets/bench.png)
 
-## Evaluation Instruction
+## 👇 Evaluation Instruction
 
 ### 1️⃣ Database Initialization
 
