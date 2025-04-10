@@ -1,6 +1,6 @@
 # 🤖💡 [LiveIdeaBench](http://liveideabench.com): Evaluating LLMs' Scientific Creativity and Idea Generation with Minimal Context
 
-[![CO2 Estimation](https://img.shields.io/badge/🌍🌱-CO2%20Estimation-brightgreen)](https://huggingface.co/datasets/6cf/liveideabench/co2.ipynb)
+[![CO2 Estimation](https://img.shields.io/badge/🌍🌱-CO2%20Estimation-brightgreen)](https://github.com/x66ccff/liveideabench/co2.ipynb)
 
 _"It's not like finding a needle in a haystack, it is like creating new needles."_
 
