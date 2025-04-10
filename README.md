@@ -39,6 +39,10 @@ We are excited to announce that the latest dataset, including supplementary test
 
 ### 1️⃣ Installing Environment
 
+```bash
+conda env create -f environment.yaml
+```
+
 ### 2️⃣ Database Initialization
 
 Run the Python script to initialize the database:
