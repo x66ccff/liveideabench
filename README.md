@@ -19,7 +19,7 @@ _"It's not like finding a needle in a haystack, it is like creating new needles.
 
 We are pleased to announce that, based on the invaluable feedback from reviewers, we have enhanced our benchmark by upgrading it to **version 2**. This update introduces a new dimension—**Clarity**—and improves the prompts, evaluation process (including the rejection handling mechanism), making our benchmark more comprehensive and objective.
 
-This v2 version of the benchmark incorporates the latest models, including: `claude-3.7-sonnet:thinking`, `o3-mini-high` `gpt-4.5-preview`, `qwq-32b`, `deepseek-r1`, `gemini-2.0-flash-thinking`, and a total of **41** state-of-the-art models.
+This v2 version of the benchmark incorporates the latest models, including: `claude-3.7-sonnet:thinking`, `o3-mini-high`, `gpt-4.5-preview`, `qwq-32b`, `deepseek-r1`, `gemini-2.0-flash-thinking`, and a total of **41** state-of-the-art models.
 
 For previous v1 version, check it out here:
 
