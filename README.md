@@ -8,7 +8,9 @@ _"It's not like finding a needle in a haystack, it is like creating new needles.
 
 ### Dataset
 
-[![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/6cf/liveideabench)
+[![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DatasetV1-yellow)](https://huggingface.co/datasets/6cf/liveideabench)
+
+[![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DatasetV2-yellow)](https://huggingface.co/datasets/6cf/liveideabench-v2)
 
 ### Paper
 
@@ -20,12 +22,6 @@ _"It's not like finding a needle in a haystack, it is like creating new needles.
 We are pleased to announce that, based on the invaluable feedback from reviewers, we have enhanced our benchmark by upgrading it to **version 2**. This update introduces a new dimension—**Clarity**—and improves the prompts, evaluation process (including the rejection handling mechanism), making our benchmark more comprehensive and objective.
 
 This v2 version of the benchmark incorporates the latest models, including: `claude-3.7-sonnet:thinking`, `o3-mini-high`, `gpt-4.5-preview`, `qwq-32b`, `deepseek-r1`, `gemini-2.0-flash-thinking`, and a total of **41** state-of-the-art models.
-
-For previous v1 version, check it out here:
-
-[https://huggingface.co/datasets/6cf/liveideabench](https://huggingface.co/datasets/6cf/liveideabench)
-
-[https://huggingface.co/datasets/6cf/liveideabench-DLC-250127](https://huggingface.co/datasets/6cf/liveideabench-DLC-250127)
 
 ### 🧠✨🎉 News (2025/1/27): Latest Dataset Update on Hugging Face! 
 
