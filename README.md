@@ -91,7 +91,7 @@ python hash.py
 
 ### 6️⃣ Compute Flexibility & Plotting
 
-run `stat_flexibility.ipynb`
+run `stats_flexibility.ipynb`
 
 ### Supported Model Providers
 
