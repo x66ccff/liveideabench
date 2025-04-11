@@ -35,7 +35,7 @@ We are excited to announce that the latest dataset, including supplementary test
 
 ## 👇 Evaluation Instruction
 
-### 1️⃣ Installation & Setup
+### 1️⃣ Install Environment
 
 ```bash
 conda env create -f environment.yaml
