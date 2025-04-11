@@ -35,7 +35,7 @@ We are excited to announce that the latest dataset, including supplementary test
 
 ## 👇 Evaluation Instruction
 
-### 1️⃣ Installing Environment
+### 1️⃣ Installation & Setup
 
 ```bash
 conda env create -f environment.yaml
@@ -90,12 +90,23 @@ python run.py --idea_model "openai/gpt-4o-mini"
 
 ### 5️⃣ Database Export
 
+This step extracts the generated ideas, scores, and metadata from the internal database.
+
+Run the script:
+
 ```bash
 python view_database.py      
 ```
-Then, run `stats.ipynb`, to generate `data/data.parquet`
+
+to extract the generated data from the SQL database.
+
+Then, run `stats.ipynb`, to generate `data/data.parquet` which serves as input for the subsequent analysis notebooks.
 
 ### 6️⃣ Evaluate Fluency
+
+Fluency measures the diversity and uniqueness of the generated ideas. This script calculates the Fluency score based on the processed data.
+
+Run the script:
 
 ```bash
 python hash.py
@@ -103,14 +114,17 @@ python hash.py
 
 ### 7️⃣ Compute Flexibility & Plotting
 
-run `stats_flexibility.ipynb`
+Flexibility evaluates whether the model's generated ideas span across diverse scientific disciplines based on the input keyword(s).
 
+This notebook calculates the Flexibility score and creates visualizations of the benchmark results.
+
+Run the Jupyter Notebook:  `stats_flexibility.ipynb`
 
 ## 🌍🌱 CO2 Emission Estimation
 
-run `co2.ipynb`
+This notebook provides an estimation of the CO2 footprint associated with running the idea generation and evaluation pipeline.
 
-
+Run the Jupyter Notebook: `co2.ipynb`
 
 
 ## Bibtex
