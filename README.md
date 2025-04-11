@@ -1,6 +1,5 @@
 # 🤖💡 [LiveIdeaBench](http://liveideabench.com): Evaluating LLMs' Scientific Creativity and Idea Generation with Minimal Context
 
-[![CO2 Estimation](https://img.shields.io/badge/🌍🌱-CO2%20Estimation-brightgreen)](https://github.com/x66ccff/liveideabench/blob/main/co2.ipynb)
 
 _"It's not like finding a needle in a haystack, it is like creating new needles."_
 
@@ -9,15 +8,12 @@ _"It's not like finding a needle in a haystack, it is like creating new needles.
 
 ### 🤗 Dataset
 
-[![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DatasetV1-yellow)](https://huggingface.co/datasets/6cf/liveideabench)
-
-[![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DatasetV1_DLC_250127-yellow)](https://huggingface.co/datasets/6cf/liveideabench-DLC-250127)
-
-[![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DatasetV2-yellow)](https://huggingface.co/datasets/6cf/liveideabench-v2)
+[![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DatasetV1-yellow)](https://huggingface.co/datasets/6cf/liveideabench) [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DatasetV1_DLC_250127-yellow)](https://huggingface.co/datasets/6cf/liveideabench-DLC-250127) [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DatasetV2-yellow)](https://huggingface.co/datasets/6cf/liveideabench-v2)
 
 ### 📃 Paper
 
-[![arXiv](https://img.shields.io/badge/arXiv-2412.17596-b31b1b.svg)](https://arxiv.org/abs/2412.17596)
+[![arXiv](https://img.shields.io/badge/arXiv-2412.17596-b31b1b.svg)](https://arxiv.org/abs/2412.17596) [![CO2 Estimation](https://img.shields.io/badge/🌍🌱-CO2%20Estimation-brightgreen)](https://github.com/x66ccff/liveideabench/blob/main/co2.ipynb)
+
 
 
 ### 🧠✨🎉 News (2025/3/29): Latest Dataset Update (v2) on Hugging Face! 
