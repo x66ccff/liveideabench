@@ -1,8 +1,10 @@
 # 🤖💡 [LiveIdeaBench](http://liveideabench.com): Evaluating LLMs' Scientific Creativity and Idea Generation with Minimal Context
 
-![License](https://img.shields.io/badge/License-MIT-2196F3.svg)
-![AI4Science](https://img.shields.io/badge/AI4Science-8A2BE2)
+
+
 [![arXiv](https://img.shields.io/badge/arXiv-2412.17596-b31b1b.svg)](https://arxiv.org/abs/2412.17596)
+![AI4Science](https://img.shields.io/badge/AI4Science-8A2BE2)
+![License](https://img.shields.io/badge/License-MIT-2196F3.svg)
 [![CO2 Estimation](https://img.shields.io/badge/🌍🌱-CO2%20Estimation-brightgreen)](https://github.com/x66ccff/liveideabench/blob/main/co2.ipynb)
 ![Stars](https://img.shields.io/github/stars/x66ccff/liveideabench)
 
