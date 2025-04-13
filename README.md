@@ -124,7 +124,7 @@ Run the Jupyter Notebook:  `stats_flexibility.ipynb`
 
 ## 🌍🌱 CO2 Emission Estimation
 
-This notebook provides an estimation of the CO2 footprint associated with running the idea generation and evaluation pipeline.
+This repo provides an estimation of the CO2 footprint associated with running the idea generation and evaluation pipeline.
 
 Run the Jupyter Notebook: `co2.ipynb`
 
