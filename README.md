@@ -121,6 +121,7 @@ Flexibility evaluates whether the model's generated ideas span across diverse sc
 This notebook calculates the Flexibility score and creates visualizations of the benchmark results.
 
 Run the Jupyter Notebook:  `stats_flexibility.ipynb`
+
 Generated figures can be found in the `./figs` directory.
 
 ## 🌍🌱 CO2 Emission Estimation
