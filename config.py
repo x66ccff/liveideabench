@@ -1,29 +1,29 @@
 """
-配置文件处理模块
+Configuration File Processing Module
 
-包含API密钥管理、通用配置项和环境变量处理逻辑
+Includes API key management, general configuration items, and environment variable processing logic
 """
 
 import os
 from typing import Dict, List, Optional
 
-# 定义支持的模型提供商
+# Define the supported model providers
 PROVIDER_NAMES = ["openrouter", "ollama", "stepfun", "gemini", "aigcbest", "default"]
 
-# 定义评委模型（较强的模型）
+# Define the critic models (stronger models)
 CRITIC_MODELS = [
     "anthropic/claude-3.7-sonnet:thinking",
     "openai/o3-mini-high",
     "openai/gpt-4.5-preview", 
-    # "openai/o1",           # 因为openai超过2模型而被排除
-    # "anthropic/claude-3.7", # 因为和 thinking 共享一样的基模被排除
+    # "openai/o1",           # Excluded due to openai exceeding 2 models
+    # "anthropic/claude-3.7", # Excluded as it shares the same base model as 'thinking'
     "qwen/qwq-32b",
     "deepseek/deepseek-r1",
     "google/gemini-2.0-flash-thinking-exp:free",
     "google/gemini-2.0-pro-exp-02-05:free",
     "qwen/qwen-max",
     "deepseek/deepseek-chat", # (v3)
-    # "google/gemini-2.0-flash-exp:free", # 因为google超过2模型被排除
+    # "google/gemini-2.0-flash-exp:free", # Excluded due to google exceeding 2 models
     "anthropic/claude-3.5-sonnet"
 ]
 
@@ -66,29 +66,29 @@ IDEA_MODELS = [
 ] + CRITIC_MODELS
 
 class Config:
-    """配置类，负责加载和管理API密钥及其他配置项"""
+    """Configuration class responsible for loading and managing API keys and other configuration items"""
 
     def __init__(self):
-        # 从环境变量或apikey文件加载密钥
+        # Load keys from environment variables or apikey file
         self.api_keys = self._load_api_keys()
         
-        # 默认值
+        # Default values
         self.default_provider = "openrouter"
         
-        # 模型名称到提供商的映射
+        # Mapping from model names to providers
         self.model_provider_mapping = {
-            # Ollama模型映射
+            # Mapping for Ollama models
             "dracarys": "ollama",
             "6cf/": "ollama",
-            # Gemini模型默认使用aigcbest
+            # Gemini models use aigcbest by default
             "gemini": "aigcbest",
             "step-2-16k-202411": "stepfun"
-            # 其他映射可在运行时动态添加
+            # Other mappings can be dynamically added at runtime
         }
 
     def _load_api_keys(self) -> Dict[str, str]:
-        """从apikey文件和环境变量中加载API密钥"""
-        # 初始化默认值
+        """Load API keys from apikey file and environment variables"""
+        # Initialize default values
         keys = {
             "openrouter": None,
             "stepfun": None,
@@ -96,18 +96,18 @@ class Config:
             "aigcbest": None,
         }
         
-        # 从环境变量加载
+        # Load from environment variables
         if os.getenv("OPENROUTER_API_KEY"):
             keys["openrouter"] = os.getenv("OPENROUTER_API_KEY")
         if os.getenv("STEP_API_KEY"):
             keys["stepfun"] = os.getenv("STEP_API_KEY")
         if os.getenv("GEMINI_API_KEYS"):
-            # 假设环境变量是逗号分隔的
+            # Assume the environment variable is comma-separated
             keys["gemini"] = os.getenv("GEMINI_API_KEYS").split(",")
         if os.getenv("AIGCBEST_API_KEY"):
             keys["aigcbest"] = os.getenv("AIGCBEST_API_KEY")
             
-        # 从apikey文件加载
+        # Load from apikey file
         try:
             with open("apikey", "r") as f:
                 content = f.read().strip()
@@ -116,38 +116,38 @@ class Config:
         except (FileNotFoundError, IOError):
             pass
             
-        # 确保至少有一个有效的API密钥
+        # Ensure at least one valid API key is found
         if not keys["openrouter"]:
-            raise ValueError("未找到有效的OpenRouter API密钥，请在apikey文件或环境变量中提供")
+            raise ValueError("No valid OpenRouter API key found, please provide one in the apikey file or environment variable")
             
         return keys
         
     def get_api_key(self, provider: str) -> str:
-        """获取指定提供商的API密钥"""
+        """Get the API key for the specified provider"""
         if provider == "gemini":
-            # 对于Gemini，随机选择一个密钥
+            # For Gemini, randomly select one of the keys
             import random
             if not self.api_keys["gemini"]:
-                raise ValueError("未找到有效的Gemini API密钥")
+                raise ValueError("No valid Gemini API keys found")
             return random.choice(self.api_keys["gemini"])
         return self.api_keys.get(provider)
         
     def get_provider_for_model(self, model_name: str) -> str:
-        """根据模型名称确定应使用的提供商"""
-        # 检查是否有直接匹配
+        """Determine the provider to use based on the model name"""
+        # Check for direct matches
         for prefix, provider in self.model_provider_mapping.items():
             if prefix in model_name.lower():
                 return provider
                 
-        # 没有匹配项，返回默认提供商
+        # No match found, return the default provider
         return self.default_provider
         
     def set_default_provider(self, provider: str) -> None:
-        """设置默认提供商"""
+        """Set the default provider"""
         if provider not in PROVIDER_NAMES:
-            raise ValueError(f"不支持的提供商: {provider}。支持的提供商有: {', '.join(PROVIDER_NAMES)}")
+            raise ValueError(f"Unsupported provider: {provider}. Supported providers are: {', '.join(PROVIDER_NAMES)}")
         self.default_provider = provider
 
 
-# 创建全局配置实例
+# Create a global config instance
 config = Config()

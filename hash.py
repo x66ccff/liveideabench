@@ -123,111 +123,110 @@ def query_local_model(prompt, model="olmo2:7b"):
     except Exception as e:
         print(f"Error connecting to Ollama: {e}")
         return None
-
 def main(max_num_eval=None, method="llm"):
     
-    # 设置固定的随机种子确保可重复性
-    random.seed(42)  # 可以使用任意固定数字作为种子
-    np.random.seed(42)  # 确保numpy的随机函数也是确定性的
-    # 加载和预处理数据
+    # Set a fixed random seed to ensure reproducibility
+    random.seed(42)  # You can use any fixed number as the seed
+    np.random.seed(42)  # Ensure numpy's random functions are also deterministic
+    # Load and preprocess the data
     df = pd.read_parquet('./data/data.parquet')
 
-    # 筛选idea长度
+    # Filter by idea length
     df['idea_length_in_char'] = df['idea'].apply(lambda x: len(str(x)))
     df = df[(df['idea_length_in_char'] >= 100) & (df['idea_length_in_char'] < 2500)]
 
-    # 筛选词数
+    # Filter by word count
     df['idea_length_in_words'] = df['idea'].apply(lambda x: len(str(x).split()))
     df = df[df['idea_length_in_words'] < 200]
 
-    # 提取唯一的关键词和模型名称
+    # Extract unique keywords and idea models
     all_keywords = df['keywords'].unique().tolist()
     all_idea_models = df['idea_model'].unique().tolist()
 
-    # 创建或加载JSON文件
+    # Create or load the JSON file
     # json_file_path = './data/idea_hash.json'
     json_file_path = f'./data/idea_hash_{method}.json'
     if not os.path.exists(json_file_path):
         with open(json_file_path, 'w') as json_file:
             json.dump([], json_file)
     
-    # 读取现有的评价数据
+    # Read the existing evaluation data
     try:
         with open(json_file_path, 'r') as json_file:
             ideas_data = json.load(json_file)
     except Exception as e:
-        print(f"读取JSON文件时出错: {e}")
+        print(f"Error reading the JSON file: {e}")
         ideas_data = []
     
-    # 获取已评估的数量
+    # Get the number of ideas already evaluated
     num_evaluated = len(ideas_data)
-    print(f"当前已评估 {num_evaluated} 对想法")
+    print(f"Currently {num_evaluated} ideas have been evaluated")
     
-    # 如果已达到目标数量，则直接返回
+    # If the target number has been reached, return directly
     if max_num_eval is not None and num_evaluated >= max_num_eval:
-        print(f"已达到目标评估数量: {max_num_eval}")
+        print(f"Target evaluation count reached: {max_num_eval}")
         return
     
-    # 创建所有可能的关键词和模型组合
+    # Create all possible keyword and model combinations
     keyword_model_pairs = [(keyword, idea_model) for keyword in all_keywords for idea_model in all_idea_models]
     
-    # 已经评估过的idea哈希
+    # Hashes of ideas already evaluated
     existing_hashes = set()
     for item in ideas_data:
         existing_hashes.add(item.get('hash_A', ''))
         existing_hashes.add(item.get('hash_B', ''))
     
-    # 随机打乱关键词和模型组合
+    # Randomly shuffle the keyword and model combinations
     random.shuffle(keyword_model_pairs)
     
-    # 如果使用LLM或SLM方法，则读取提示模板
+    # If using the LLM or SLM method, read the prompt template
     critic_prompt = None
     if method == "llm" or method == "slm":
         with open('utils/prompts.json', 'r', encoding='utf-8') as f:
             prompts = json.load(f)
             critic_prompt = prompts["fluency_critic_prompt"]["description"]
     
-    # 主处理逻辑
+    # Main processing logic
     for keyword, idea_model in keyword_model_pairs:
-        # 检查是否达到目标数量
+        # Check if the target number has been reached
         if max_num_eval is not None and len(ideas_data) >= max_num_eval:
-            print(f"已达到目标评估数量: {max_num_eval}")
+            print(f"Target evaluation count reached: {max_num_eval}")
             break
             
-        # 筛选特定关键词和模型的数据
+        # Filter the data for the specific keyword and model
         df_view = df[(df['keywords'] == keyword) & (df['idea_model'] == idea_model)]
         
         if len(df_view) < 2:
             continue
             
-        # 提取唯一的想法列表
+        # Extract the unique ideas list
         unique_ideas_list = df_view['idea'].unique().tolist()
         
         if len(unique_ideas_list) <= 1:
-            print('只有一个或没有想法，跳过')
+            print('Only one or no ideas, skipping')
             continue
         
-        # 随机选择两个想法进行比较
+        # Randomly select two ideas for comparison
         random.shuffle(unique_ideas_list)
         idea_A = unique_ideas_list[0]
         idea_B = unique_ideas_list[1]
         
-        # 计算哈希值
+        # Calculate the hash values
         idea_hash_A = stable_hash(idea_A)
         idea_hash_B = stable_hash(idea_B)
         
-        # 检查是否已经评价过这对想法
+        # Check if this pair of ideas has already been evaluated
         if idea_hash_A in existing_hashes or idea_hash_B in existing_hashes:
-            print('想法已存在，跳过', idea_A[:10], '...')
+            print('Idea already exists, skipping', idea_A[:10], '...')
             continue
         
-        # 根据选择的方法计算相似性分数
+        # Calculate the similarity score based on the selected method
         success = False
         reasoning = None
         critic_model = None
         
         if method == "llm":
-            # 原有的LLM评价逻辑
+            # Original LLM evaluation logic
             critic_model = random.choice(CRITIC_MODELS)
             filled_prompt = critic_prompt.replace("{{keyword}}", keyword).replace("{{A}}", idea_A).replace("{{B}}", idea_B)
             critic_llm = create_llm("critic", critic_model)
@@ -244,37 +243,43 @@ def main(max_num_eval=None, method="llm"):
                     critique = run_with_timeout(do, timeout=5, idea=idea_A, prompt_this=filled_prompt)
                     answers = ['A','B','C','D']
                     
-                    # 处理推理部分
+                    # Handle the reasoning part
                     if isinstance(critique, tuple):
                         reasoning = critique[1]
                         critique = critique[0]
                     
-                    # 清理结果，只保留字母
+                    # Clean the result, keeping only letters
                     cleaned_critique = re.sub(r'[^a-zA-Z]', '', critique)
                     
                     if any(answer in cleaned_critique for answer in answers):
-                        # 根据回答计算相似性分数
+                        # Calculate the similarity score based on the answer
+                        # score_mapping = {
+                        #     'A': 10,      # Completely different
+                        #     'B': 6.6667,  # Similar but not equivalent
+                        #     'C': 3.3333,  # Very similar
+                        #     'D': 0        # Completely the same
+                        # }
                         score_mapping = {
-                            'A': 10,      # 完全不同
-                            'B': 6.6667,  # 类似但不等价
-                            'C': 3.3333,  # 非常相似
-                            'D': 0        # 完全相同
+                            'A': 10,      # Completely different
+                            'B': 7,  # Similar but not equivalent
+                            'C': 4,  # Very similar
+                            'D': 1        # Completely the same
                         }
                         score = score_mapping[cleaned_critique[0]]
                         success = True
                     else:
-                        print(f"未能获取有效答案，重试 {retry_count+1}/{max_retries}")
+                        print(f"Failed to get a valid answer, retrying {retry_count+1}/{max_retries}")
                         retry_count += 1
                 except Exception as e:
-                    print(f"错误: {e}, 重试 {retry_count+1}/{max_retries}")
+                    print(f"Error: {e}, retrying {retry_count+1}/{max_retries}")
                     retry_count += 1
             
             if not success:
-                print(f"三次尝试后仍然失败，跳过当前比较")
+                print(f"Failed after three attempts, skipping the current comparison")
                 continue
         
         elif method == "slm":
-            # SLM (Local Ollama model) 评价逻辑
+            # SLM (Local Ollama model) evaluation logic
             critic_model = "olmo2:7b"
             filled_prompt = critic_prompt.replace("{{keyword}}", keyword).replace("{{A}}", idea_A).replace("{{B}}", idea_B)
             
@@ -287,7 +292,7 @@ def main(max_num_eval=None, method="llm"):
                     if critique:
                         answers = ['A','B','C','D']
                         
-                        # 使用正则表达式查找答案和解释
+                        # Use regular expressions to find the answer and reasoning
                         answer_match = re.search(r'Answer: ([A-D])', critique)
                         reasoning_match = re.search(r'Reasoning: (.*?)($|Answer:)', critique, re.DOTALL)
                         
@@ -296,47 +301,52 @@ def main(max_num_eval=None, method="llm"):
                             if reasoning_match:
                                 reasoning = reasoning_match.group(1).strip()
                                 
-                            # 根据回答计算相似性分数
+                            # Calculate the similarity score based on the answer
+                            # score_mapping = {
+                            #     'A': 10,      # Completely different
+                            #     'B': 6.6667,  # Similar but not equivalent
+                            #     'C': 3.3333,  # Very similar
+                            #     'D': 0        # Completely the same
+                            # }
                             score_mapping = {
-                                'A': 10,      # 完全不同
-                                'B': 6.6667,  # 类似但不等价
-                                'C': 3.3333,  # 非常相似
-                                'D': 0        # 完全相同
+                                'A': 10,      # Completely different
+                                'B': 7,  # Similar but not equivalent
+                                'C': 4,  # Very similar
+                                'D': 1        # Completely the same
                             }
-                            
                             if answer in score_mapping:
                                 score = score_mapping[answer]
                                 success = True
                             else:
-                                print(f"未识别的答案: {answer}, 重试 {retry_count+1}/{max_retries}")
+                                print(f"Unrecognized answer: {answer}, retrying {retry_count+1}/{max_retries}")
                                 retry_count += 1
                         else:
-                            # 如果没有找到明确的答案格式，尝试直接找字母
+                            # If no clear answer format is found, try to directly find the letter
                             cleaned_critique = re.sub(r'[^a-zA-Z]', '', critique)
                             for ans in answers:
                                 if ans in cleaned_critique:
                                     score_mapping = {
-                                        'A': 10,      # 完全不同
-                                        'B': 6.6667,  # 类似但不等价
-                                        'C': 3.3333,  # 非常相似
-                                        'D': 0        # 完全相同
+                                        'A': 10,      # Completely different
+                                        'B': 7,  # Similar but not equivalent
+                                        'C': 4,  # Very similar
+                                        'D': 1        # Completely the same
                                     }
                                     score = score_mapping[ans]
                                     success = True
                                     break
                             
                             if not success:
-                                print(f"未能获取有效答案，重试 {retry_count+1}/{max_retries}")
+                                print(f"Failed to get a valid answer, retrying {retry_count+1}/{max_retries}")
                                 retry_count += 1
                     else:
-                        print(f"未获取到Ollama响应，重试 {retry_count+1}/{max_retries}")
+                        print(f"Failed to get a response from Ollama, retrying {retry_count+1}/{max_retries}")
                         retry_count += 1
                 except Exception as e:
-                    print(f"错误: {e}, 重试 {retry_count+1}/{max_retries}")
+                    print(f"Error: {e}, retrying {retry_count+1}/{max_retries}")
                     retry_count += 1
             
             if not success:
-                print(f"三次尝试后仍然失败，跳过当前比较")
+                print(f"Failed after three attempts, skipping the current comparison")
                 continue
         
         elif method == "jaccard":
@@ -345,7 +355,7 @@ def main(max_num_eval=None, method="llm"):
                 success = True
                 reasoning = f"Jaccard similarity calculated between the two ideas"
             except Exception as e:
-                print(f"Jaccard计算错误: {e}")
+                print(f"Jaccard calculation error: {e}")
                 continue
         
         elif method == "tfidf":
@@ -354,7 +364,7 @@ def main(max_num_eval=None, method="llm"):
                 success = True
                 reasoning = f"TF-IDF similarity calculated between the two ideas"
             except Exception as e:
-                print(f"TF-IDF计算错误: {e}")
+                print(f"TF-IDF calculation error: {e}")
                 continue
         
         elif method == "embedding":
@@ -363,7 +373,7 @@ def main(max_num_eval=None, method="llm"):
                 success = True
                 reasoning = f"BGE-M3 embedding similarity calculated between the two ideas"
             except Exception as e:
-                print(f"Embedding计算错误: {e}")
+                print(f"Embedding calculation error: {e}")
                 continue
                 
         elif method == "embedding_mxbai":
@@ -372,17 +382,17 @@ def main(max_num_eval=None, method="llm"):
                 success = True
                 reasoning = f"MXBai embedding similarity calculated between the two ideas"
             except Exception as e:
-                print(f"MXBai Embedding计算错误: {e}")
+                print(f"MXBai Embedding calculation error: {e}")
                 continue
         
         else:
-            print(f"不支持的方法: {method}")
+            print(f"Unsupported method: {method}")
             continue
 
-        # 输出结果
+        # Output the result
         print(f"Score: {score}, Hash A: {idea_hash_A}, Hash B: {idea_hash_B}")
 
-        # 创建新的数据项
+        # Create a new data item
         new_idea_data = {
             "hash_A": idea_hash_A,
             "hash_B": idea_hash_B,
@@ -390,14 +400,14 @@ def main(max_num_eval=None, method="llm"):
             "method": method
         }
         
-        # 添加LLM/SLM相关信息
+        # Add LLM/SLM-related information
         if method == "llm" or method == "slm":
             new_idea_data["fluency_critic_model"] = critic_model
         
         if reasoning:
             new_idea_data["reasoning"] = reasoning
         
-        # 添加并保存数据
+        # Add and save the data
         ideas_data.append(new_idea_data)
         existing_hashes.add(idea_hash_A)
         existing_hashes.add(idea_hash_B)
@@ -405,7 +415,7 @@ def main(max_num_eval=None, method="llm"):
         with open(json_file_path, 'w') as json_file:
             json.dump(ideas_data, json_file, indent=2)
         
-        print(f"当前已评估 {len(ideas_data)} 对想法")
+        print(f"Currently {len(ideas_data)} ideas have been evaluated")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Evaluate ideas for fluency.')
