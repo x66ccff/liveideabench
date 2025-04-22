@@ -21,6 +21,11 @@ from utils.LLM import create_llm, parse_critique, is_response_rejected
 from utils.database import save_result, check_duplicate_entries, close_all_connections
 from config import CRITIC_MODELS, IDEA_MODELS
 
+# Ensure directories exist
+os.makedirs('./logs', exist_ok=True)
+os.makedirs('./data', exist_ok=True)
+os.makedirs('./figs', exist_ok=True)
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
@@ -31,12 +36,6 @@ logging.basicConfig(
     ]
 )
 logger = logging.getLogger(__name__)
-
-# Ensure directories exist
-os.makedirs('./logs', exist_ok=True)
-os.makedirs('./data', exist_ok=True)
-
-    
 
 
 def load_keywords(file_path: str = './keywords_data/keywordsEverywhere20241216.xlsx') -> List[str]:
