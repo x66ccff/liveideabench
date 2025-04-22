@@ -296,6 +296,9 @@ def main() -> None:
         logger.error(f"❌ Unsupported model: {args.idea_model}")
         logger.info(f"💡All available idea models: {IDEA_MODELS}")
         logger.info("💡HINT: You can modify this in `config.py`")
+        for m in IDEA_MODELS:
+            if args.idea_model in m:
+                logger.info(f"💡Do you mean {m}?")
         return
     
     # Load keywords and prompts
