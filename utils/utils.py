@@ -1,63 +1,63 @@
 """
-通用工具函数模块
+General utility function module
 
-包含哈希生成、超时处理等通用工具函数
+Contains general utility functions such as hash generation and timeout handling
 """
 
 import hashlib
 import signal
 
-# 生成稳定的哈希值，确保相同的文本总是产生相同的哈希值
+# Generate a stable hash value, ensuring the same text always produces the same hash value
 def stable_hash(text):
     """
-    为输入文本生成稳定的MD5哈希值
+    Generate a stable MD5 hash value for the input text
     
     Args:
-        text: 需要哈希的文本
+        text: The text to be hashed
         
     Returns:
-        文本的MD5哈希值（十六进制字符串）
+        The MD5 hash value of the text (hexadecimal string)
     """
     return hashlib.md5(str(text).encode('utf-8')).hexdigest()
 
-# 超时处理相关函数
+# Timeout handling related functions
 def timeout_handler(signum, frame):
-    """当函数执行超时时触发的处理器"""
+    """Handler triggered when function execution times out"""
     raise TimeoutError("Function call timed out")
 
 def run_with_timeout(func, timeout, *args, **kwargs):
     """
-    在指定时间内运行函数，如果超时则抛出异常
+    Run a function within a specified time, raising an exception if it times out
     
     Args:
-        func: 要执行的函数
-        timeout: 超时时间（秒）
-        *args, **kwargs: 传递给func的参数
+        func: The function to execute
+        timeout: Timeout duration (seconds)
+        *args, **kwargs: Arguments to pass to func
         
     Returns:
-        函数执行的结果
+        The result of the function execution
         
     Raises:
-        TimeoutError: 如果函数执行超过指定时间
+        TimeoutError: If the function execution exceeds the specified time
     """
-    # 设置信号处理器
+    # Set the signal handler
     signal.signal(signal.SIGALRM, timeout_handler)
     signal.alarm(timeout)
     
     try:
         result = func(*args, **kwargs)
     finally:
-        # 取消警报
+        # Cancel the alarm
         signal.alarm(0)
     return result
 
 def append_content_new(txt_path, content_new):
     """
-    将新内容追加到指定的文本文件中
+    Append new content to the specified text file
     
     Args:
-        txt_path: 目标文件路径
-        content_new: 要追加的内容
+        txt_path: Target file path
+        content_new: The content to append
     """
     with open(txt_path, "a", encoding='utf-8') as f:
         f.write(content_new)

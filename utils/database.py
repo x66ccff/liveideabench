@@ -1,7 +1,7 @@
 """
-数据库管理模块
+Database Management Module
 
-使用SQLite处理数据存储，支持多进程并发访问
+Uses SQLite for data storage, supporting concurrent access from multiple processes.
 """
 
 import os
@@ -12,38 +12,38 @@ from datetime import datetime
 from typing import Dict, Any, List, Optional, Union
 import logging
 
-# 配置日志
+# Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# 数据库文件路径
+# Database file path
 DB_PATH = './data/ideabench.db'
 
-# 确保数据库目录存在
+# Ensure the database directory exists
 os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
 
-# 线程锁，用于保护连接池
+# Thread lock for protecting the connection pool
 _lock = threading.Lock()
 
-# 连接池 - 每个线程一个连接
+# Connection pool - one connection per thread
 _connection_pool = {}
 
 
 def get_connection() -> sqlite3.Connection:
-    """获取当前线程的数据库连接"""
+    """Get the database connection for the current thread"""
     thread_id = threading.get_ident()
     
     with _lock:
         if thread_id not in _connection_pool:
             conn = sqlite3.connect(DB_PATH, timeout=30.0)
-            conn.row_factory = sqlite3.Row  # 使行对象可以通过列名访问
+            conn.row_factory = sqlite3.Row  # Allows row objects to be accessed by column name
             _connection_pool[thread_id] = conn
             return conn
         return _connection_pool[thread_id]
 
 
 def close_all_connections() -> None:
-    """关闭所有数据库连接"""
+    """Close all database connections"""
     with _lock:
         for conn in _connection_pool.values():
             conn.close()
@@ -51,11 +51,11 @@ def close_all_connections() -> None:
 
 
 def init_database() -> None:
-    """初始化数据库结构"""
+    """Initialize the database structure"""
     conn = get_connection()
     cursor = conn.cursor()
     
-    # 创建结果表
+    # Create the results table
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS results (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -65,17 +65,17 @@ def init_database() -> None:
         critic_model TEXT NOT NULL,
         idea TEXT NOT NULL,
         raw_critique TEXT NOT NULL,
-        parsed_scores TEXT,          -- JSON格式存储的分数
-        parsed_reasoning TEXT,       -- JSON格式存储的分析
-        critique_reasoning TEXT,     -- 批评模型的推理过程
-        error TEXT,                  -- 可能的错误信息
-        full_response TEXT NOT NULL, -- 完整响应
-        first_was_rejected INTEGER DEFAULT 0, -- 标记模型是否首次拒绝请求
-        first_reject_response TEXT   -- 保存模型首次拒绝的原因
+        parsed_scores TEXT,          -- Scores stored in JSON format
+        parsed_reasoning TEXT,       -- Analysis stored in JSON format
+        critique_reasoning TEXT,     -- Reasoning process of the critic model
+        error TEXT,                  -- Potential error messages
+        full_response TEXT NOT NULL, -- Full response
+        first_was_rejected INTEGER DEFAULT 0, -- Flag indicating if the model rejected the request initially
+        first_reject_response TEXT   -- Stores the reason for the initial rejection
     )
     ''')
     
-    # 创建索引以加速查询
+    # Create indexes to speed up queries
     cursor.execute('CREATE INDEX IF NOT EXISTS idx_keyword_model ON results (keywords, idea_model)')
     cursor.execute('CREATE INDEX IF NOT EXISTS idx_timestamp ON results (timestamp)')
     
@@ -83,18 +83,18 @@ def init_database() -> None:
 
 
 def save_result(result_data: Dict[str, Any]) -> int:
-    """保存一条评测结果到数据库
+    """Save an evaluation result to the database
 
     Args:
-        result_data: 包含评测结果的字典
+        result_data: Dictionary containing the evaluation results
 
     Returns:
-        新插入记录的ID
+        The ID of the newly inserted record
     """
     conn = get_connection()
     cursor = conn.cursor()
     
-    # 提取并处理数据
+    # Extract and process data
     timestamp = datetime.now().isoformat()
     keywords = result_data.get('keywords', '')
     idea_model = result_data.get('idea_model', '')
@@ -104,7 +104,7 @@ def save_result(result_data: Dict[str, Any]) -> int:
     full_response = result_data.get('full_response', '')
     error = result_data.get('error')
     
-    # 处理解析结果
+    # Handle parsing results
     parsed_scores = None
     parsed_reasoning = None
     if 'parsed_score' in result_data and result_data['parsed_score']:
@@ -112,10 +112,10 @@ def save_result(result_data: Dict[str, Any]) -> int:
     if 'parsed_feedback' in result_data and result_data['parsed_feedback']:
         parsed_reasoning = json.dumps(result_data['parsed_feedback'])
     
-    # 获取模型的推理过程
+    # Get the model's reasoning process
     critique_reasoning = result_data.get('critique_reasoning')
     
-    # 获取拒绝状态
+    # Get rejection status
     first_was_rejected = result_data.get('first_was_rejected', 0)
     if isinstance(first_was_rejected, bool):
         first_was_rejected = 1 if first_was_rejected else 0
@@ -135,21 +135,21 @@ def save_result(result_data: Dict[str, Any]) -> int:
         conn.commit()
         return cursor.lastrowid
     except sqlite3.Error as e:
-        logger.error(f"数据库插入错误: {str(e)}")
+        logger.error(f"Database insertion error: {str(e)}")
         conn.rollback()
         raise
 
 
 def check_duplicate_entries(keyword: str, idea_model: str, limit: int = 6) -> bool:
-    """检查是否存在足够数量的相同关键词和模型组合的记录
+    """Check if a sufficient number of records exist for the same keyword and model combination
 
     Args:
-        keyword: 关键词
-        idea_model: 想法模型名称
-        limit: 最大记录数限制
+        keyword: The keyword
+        idea_model: The idea model name
+        limit: The maximum record count limit
 
     Returns:
-        如果记录数量达到或超过限制，返回True；否则返回False
+        True if the record count meets or exceeds the limit, False otherwise
     """
     conn = get_connection()
     cursor = conn.cursor()
@@ -167,14 +167,14 @@ def check_duplicate_entries(keyword: str, idea_model: str, limit: int = 6) -> bo
 
 def query_results(filters: Optional[Dict[str, Any]] = None, 
                  limit: Optional[int] = None) -> List[Dict[str, Any]]:
-    """根据过滤条件查询结果
+    """Query results based on filter conditions
 
     Args:
-        filters: 过滤条件字典
-        limit: 最大返回记录数
+        filters: Dictionary of filter conditions
+        limit: Maximum number of records to return
 
     Returns:
-        结果列表
+        List of results
     """
     conn = get_connection()
     cursor = conn.cursor()
@@ -203,7 +203,7 @@ def query_results(filters: Optional[Dict[str, Any]] = None,
     for row in cursor.fetchall():
         result_dict = dict(row)
         
-        # 解析JSON字段
+        # Parse JSON fields
         if result_dict.get('parsed_scores'):
             try:
                 result_dict['parsed_scores'] = json.loads(result_dict['parsed_scores'])
@@ -222,48 +222,48 @@ def query_results(filters: Optional[Dict[str, Any]] = None,
 
 
 def export_to_csv(output_path: str) -> None:
-    """将数据库导出为CSV文件
+    """Export the database to a CSV file
 
     Args:
-        output_path: CSV文件的输出路径
+        output_path: The output path for the CSV file
     """
     import pandas as pd
     
     conn = get_connection()
     
-    # 读取所有结果
+    # Read all results
     df = pd.read_sql_query("SELECT * FROM results", conn)
     
-    # 处理JSON字段
+    # Process JSON fields
     for json_col in ['parsed_scores', 'parsed_reasoning']:
         if json_col in df.columns:
             df[json_col] = df[json_col].apply(
                 lambda x: json.loads(x) if x and isinstance(x, str) else x
             )
     
-    # 导出为CSV
+    # Export to CSV
     df.to_csv(output_path, index=False)
-    logger.info(f"成功导出数据至 {output_path}")
+    logger.info(f"Successfully exported data to {output_path}")
 
 
 def check_and_add_column() -> None:
-    """检查并添加新字段到现有表中"""
+    """Check and add new columns to the existing table"""
     conn = get_connection()
     cursor = conn.cursor()
     
-    # 获取表的当前结构
+    # Get the current table structure
     cursor.execute("PRAGMA table_info(results)")
     columns = [column[1] for column in cursor.fetchall()]
     
-    # 检查critique_reasoning列是否存在
+    # Check if the critique_reasoning column exists
     if 'critique_reasoning' not in columns:
-        logger.info("添加critique_reasoning列到results表")
+        logger.info("Adding critique_reasoning column to results table")
         cursor.execute("ALTER TABLE results ADD COLUMN critique_reasoning TEXT")
         conn.commit()
 
 
-# 初始化数据库
+# Initialize the database
 init_database()
 
-# 检查并更新表结构
+# Check and update table structure
 check_and_add_column()

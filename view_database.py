@@ -3,78 +3,78 @@ import sqlite3
 import pandas as pd
 import json
 
-# 定义数据库文件路径
+# Define the database file path
 DB_PATH = './data/ideabench.db'
 
 def load_and_display_database():
     """
-    加载SQLite数据库并以DataFrame形式展示内容
+    Load the SQLite database and display its content as a DataFrame
     """
-    # 检查数据库文件是否存在
+    # Check if the database file exists
     if not os.path.exists(DB_PATH):
-        print(f"错误: 数据库文件 '{DB_PATH}' 不存在")
+        print(f"Error: Database file '{DB_PATH}' does not exist")
         return
-    
-    # 创建到数据库的连接
+
+    # Create a connection to the database
     conn = sqlite3.connect(DB_PATH)
-    
+
     try:
-        # 查询所有结果
+        # Query all results
         query = "SELECT * FROM results ORDER BY timestamp DESC"
         df = pd.read_sql_query(query, conn)
-        
-        # 处理JSON字段
+
+        # Process JSON fields
         for json_col in ['parsed_scores', 'parsed_reasoning']:
             if json_col in df.columns:
                 df[json_col] = df[json_col].apply(
                     lambda x: json.loads(x) if pd.notna(x) and isinstance(x, str) else x
                 )
-        
-        # 打印基本统计信息
-        print(f"数据库中共有 {len(df)} 条记录")
-        print("\n基本统计信息:")
-        print(f"唯一关键词: {df['keywords'].nunique()} 个")
-        print(f"想法模型种类: {df['idea_model'].nunique()} 个")
-        print(f"评价模型种类: {df['critic_model'].nunique()} 个")
-        
-        # 显示DataFrame的概览
-        print("\n数据预览:")
-        # 选择更有意义的列进行显示
+
+        # Print basic statistics
+        print(f"Total records in the database: {len(df)}")
+        print("\nBasic Statistics:")
+        print(f"Unique keywords: {df['keywords'].nunique()}")
+        print(f"Number of idea model types: {df['idea_model'].nunique()}")
+        print(f"Number of critic model types: {df['critic_model'].nunique()}")
+
+        # Display an overview of the DataFrame
+        print("\nData Preview:")
+        # Select more meaningful columns for display
         display_columns = [
-            'id', 'timestamp', 'keywords', 'idea_model', 'critic_model', 
+            'id', 'timestamp', 'keywords', 'idea_model', 'critic_model',
             'parsed_scores', 'first_was_rejected'
         ]
         preview_df = df[display_columns].head(10)
-        
-        # 限制idea和critique的长度，以便更好地显示
+
+        # Limit the width of columns for better display
         pd.set_option('display.max_colwidth', 50)
-        
-        # 打印DataFrame
+
+        # Print the DataFrame
         print(preview_df)
-        
-        # 还原pandas显示设置
+
+        # Reset pandas display options
         pd.reset_option('display.max_colwidth')
-        
+
         return df
-    
+
     except sqlite3.Error as e:
-        print(f"读取数据库时出错: {e}")
-    
+        print(f"Error reading the database: {e}")
+
     finally:
-        # 关闭连接
+        # Close the connection
         conn.close()
 
-# 执行主函数
+# Execute the main function
 if __name__ == "__main__":
-    print("正在加载IdeaBench数据库...")
+    print("Loading IdeaBench database...")
     df = load_and_display_database()
     df.to_csv('./csvs/view.csv')
-    
+
     if df is not None:
-        # 可以添加更多分析代码
-        print("\n数据库加载完成！可以继续进行更多分析...")
-        
-        # 如果需要交互式分析，可以保留df变量
-        # 例如，你可以取消下面的注释以启用交互式分析
+        # More analysis code can be added here
+        print("\nDatabase loaded successfully! Further analysis can be performed...")
+
+        # If interactive analysis is needed, the df variable can be kept
+        # For example, you can uncomment the lines below to enable interactive analysis
         # import code
         # code.interact(local=locals())
