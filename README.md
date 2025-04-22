@@ -40,7 +40,7 @@ We are excited to announce that the latest dataset, including supplementary test
 ### 1️⃣ Install Environment
 
 ```bash
-conda env create -f environment.yaml
+pip install -r requirements.txt
 ```
 
 ### 2️⃣ Database Initialization
