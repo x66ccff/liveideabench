@@ -2,3 +2,5 @@ convert_to_md.py
 output.md
 logs
 figs
+gitstat.py
+.mailmap
