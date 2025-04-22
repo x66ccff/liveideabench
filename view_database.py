@@ -45,6 +45,8 @@ def load_and_display_database():
             'parsed_scores', 'first_was_rejected'
         ]
         preview_df = df[display_columns].head(10)
+        
+        print(preview_df)
 
         return df
 
