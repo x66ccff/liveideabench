@@ -46,15 +46,6 @@ def load_and_display_database():
         ]
         preview_df = df[display_columns].head(10)
 
-        # Limit the width of columns for better display
-        pd.set_option('display.max_colwidth', 50)
-
-        # Print the DataFrame
-        print(preview_df)
-
-        # Reset pandas display options
-        pd.reset_option('display.max_colwidth')
-
         return df
 
     except sqlite3.Error as e:
