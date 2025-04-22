@@ -72,7 +72,7 @@ if __name__ == "__main__":
 
     if df is not None:
         # More analysis code can be added here
-        print("\n🎉Database loaded successfully! \n💡You can now run `stats.ipynb` now to generate `data/data.parquet` which serves as input for the subsequent analysis notebooks....")
+        print("\n🎉Database loaded successfully! \n💡You can now run `stats.ipynb` to generate `data/data.parquet` which serves as input for the subsequent analysis notebooks....")
 
         # If interactive analysis is needed, the df variable can be kept
         # For example, you can uncomment the lines below to enable interactive analysis
