@@ -294,6 +294,7 @@ def main() -> None:
     
     if args.idea_model not in IDEA_MODELS:
         logger.error(f"Unsupported model: {args.idea_model}")
+        logger.info(f"All available idea models: {IDEA_MODELS}")
         return
     
     # Load keywords and prompts
