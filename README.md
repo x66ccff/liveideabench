@@ -18,6 +18,13 @@ _"It's not like finding a needle in a haystack, it is like creating new needles.
 
 [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset_V1-yellow)](https://huggingface.co/datasets/6cf/liveideabench) [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset_V1_DLC_250127-yellow)](https://huggingface.co/datasets/6cf/liveideabench-DLC-250127) [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset_V2-yellow)](https://huggingface.co/datasets/6cf/liveideabench-v2)
 
+### 🧠✨🎉 News (2026/2/22): Our paper has been accepted by Nature Communications!
+
+Paper link: https://www.nature.com/articles/s41467-026-70245-1
+
+<div align="center">
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/57ebbd92-684c-4274-aca4-1c7276488f0d" />
+</div>
 
 ### 🧠✨🎉 News (2025/3/29): Latest Dataset Update (v2) on Hugging Face! 
 
