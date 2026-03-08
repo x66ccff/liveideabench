@@ -2,10 +2,10 @@
 
 
 
-[![arXiv](https://img.shields.io/badge/arXiv-2412.17596-b31b1b.svg)](https://arxiv.org/abs/2412.17596)
+
+[![Article](https://img.shields.io/badge/Article-Nature_Communications-E30613.svg?style=flat-square&logo=nature)](https://www.nature.com/articles/s41467-026-70245-1)
 ![AI4Science](https://img.shields.io/badge/AI4Science-8A2BE2)
 ![License](https://img.shields.io/badge/License-MIT-2196F3.svg)
-[![CO2 Estimation](https://img.shields.io/badge/🌍🌱-CO2%20Estimation-brightgreen)](https://github.com/x66ccff/liveideabench/blob/main/co2.ipynb)
 ![Stars](https://img.shields.io/github/stars/x66ccff/liveideabench)
 
 
