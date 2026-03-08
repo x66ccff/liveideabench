@@ -23,7 +23,7 @@ _"It's not like finding a needle in a haystack, it is like creating new needles.
 Paper link: https://www.nature.com/articles/s41467-026-70245-1
 
 <div align="center">
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/57ebbd92-684c-4274-aca4-1c7276488f0d" />
+  <img width="500" alt="image" src="./assets/nc-web.png" />
 </div>
 
 ### 🧠✨🎉 News (2025/3/29): Latest Dataset Update (v2) on Hugging Face! 
