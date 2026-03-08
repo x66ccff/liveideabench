@@ -135,10 +135,14 @@ Run the Jupyter Notebook: `co2.ipynb`
 
 
 ```bibtex
-@article{ruan2024liveideabench,
-title={LiveIdeaBench: Evaluating LLMs' Scientific Creativity and Idea Generation with Minimal Context},
-author={Kai Ruan and Xuan Wang and Jixiang Hong and Peng Wang and Yang Liu and Hao Sun},
-journal={arXiv preprint arXiv:2412.17596},
-year={2024}
+@article{ruan2026evaluating,
+  title = {Evaluating {LLMs}' divergent thinking capabilities for scientific idea generation with minimal context},
+  author = {Ruan, Kai and Wang, Xuan and Hong, Jixiang and Sun, Hao and Wang, Peng and Liu, Yang},
+  journal = {Nature Communications},
+  year = {2026},
+  month = {mar},
+  day = {07},
+  doi = {10.1038/s41467-026-70245-1},
+  url = {https://doi.org/10.1038/s41467-026-70245-1}
 }
 ```
