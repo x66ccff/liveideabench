@@ -143,13 +143,15 @@ Run the Jupyter Notebook: `co2.ipynb`
 
 ```bibtex
 @article{ruan2026evaluating,
-  title = {Evaluating {LLMs}' divergent thinking capabilities for scientific idea generation with minimal context},
-  author = {Ruan, Kai and Wang, Xuan and Hong, Jixiang and Sun, Hao and Wang, Peng and Liu, Yang},
-  journal = {Nature Communications},
-  year = {2026},
-  month = {mar},
-  day = {07},
-  doi = {10.1038/s41467-026-70245-1},
-  url = {https://doi.org/10.1038/s41467-026-70245-1}
+  author    = {Ruan, Kai and Wang, Xuan and Hong, Jixiang and Wang, Peng and Liu, Yang and Sun, Hao},
+  title     = {Evaluating {LLMs}' Divergent Thinking Capabilities for Scientific Idea Generation with Minimal Context},
+  journal   = {Nature Communications},
+  year      = {2026},
+  month     = mar,
+  day       = {7},
+  issn      = {2041-1723},
+  doi       = {10.1038/s41467-026-70245-1},
+  url       = {https://doi.org/10.1038/s41467-026-70245-1},
+  publisher = {Nature Publishing Group}
 }
 ```
